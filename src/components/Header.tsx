@@ -134,9 +134,9 @@ export const Header = () => {
                             </ToggleButton>
                             <ToggleButton
                                 prefixIcon="person"
-                                href={`/${params?.locale}/signin`}
-                                selected={isActive('signin')}>
-                                <Flex paddingX="2" hide="s">Sign in</Flex>
+                                href={`/${params?.locale}/login`}
+                                selected={isActive('login')}>
+                                <Flex paddingX="2">Login</Flex>
                             </ToggleButton>
                         </Flex>
                     </Flex>
