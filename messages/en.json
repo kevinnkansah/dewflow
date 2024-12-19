@@ -1,0 +1,82 @@
+{
+    "person": {
+        "role": "Design Engineer"
+    },
+    "newsletter": {
+        "title": "Subscribe to {firstName}'s Newsletter",
+        "description": "I occasionally write about design, technology, and share thoughts on the intersection of creativity and engineering",
+        "button": "Sign up"
+    },
+    "home": {
+        "label": "Home",
+        "title": "{name}'s Portfolio",
+        "description": "Portfolio website showcasing my work as a {role}",
+        "headline": "Design engineer and builder",
+        "subline": "I'm Selene, a design engineer at FLY, where I craft intuitive user experiences. After hours, I build my own projects."
+    },
+    "about": {
+        "label": "About",
+        "title": "About",
+        "description": "Meet {name}, {role} from {location}",
+        "intro": {
+            "title": "Introduction",
+            "description": "null."
+        } 
+    },
+    "blog": {
+        "label": "Blog",
+        "title": "Writing about design and tech...",
+        "description": "Read what {name} has been up to recently"
+    },
+    "work": {
+        "label": "Work",
+        "title": "My projects",
+        "description": "Design and dev projects by {name}"
+    },
+    "gallery": {
+        "label": "Gallery",
+        "title": "My photo gallery",
+        "description": "A photo collection by {name}"
+    },
+    "pricing": {
+        "title": "Pricing Plans",
+        "description": "Choose the plan that best fits your needs",
+        "plans": {
+            "basic": {
+                "name": "Basic",
+                "price": "$9/month",
+                "features": ["Feature 1", "Feature 2", "Feature 3"]
+            },
+            "pro": {
+                "name": "Pro",
+                "price": "$19/month",
+                "features": ["All Basic features", "Feature 4", "Feature 5"]
+            },
+            "enterprise": {
+                "name": "Enterprise",
+                "price": "Custom",
+                "features": ["All Pro features", "Feature 6", "Feature 7"]
+            }
+        }
+    },
+    "contact": {
+        "title": "Contact our team",
+        "description": "Have a question or want to work together? Send me a message.",
+        "form": {
+            "name": "Name",
+            "email": "Email",
+            "message": "Message",
+            "submit": "Send Message"
+        }
+    },
+    "signin": {
+        "title": "Sign In / Sign up",
+        "description": "Sign in to your account",
+        "form": {
+            "email": "Email",
+            "password": "Password",
+            "submit": "Sign In",
+            "forgotPassword": "Forgot Password?"
+        }
+    }
+}
