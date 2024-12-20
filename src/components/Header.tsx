@@ -3,7 +3,7 @@
 import { useParams } from "next/navigation";
 import { useEffect, useState, useTransition } from "react";
 
-import { Flex, ToggleButton } from "@/once-ui/components"
+import { Flex, ToggleButton, Button, Link } from "@/once-ui/components"
 import styles from '@/components/Header.module.scss'
 
 import { routes, display } from '@/app/resources'
@@ -134,8 +134,8 @@ export const Header = () => {
                             </ToggleButton>
                             <ToggleButton
                                 prefixIcon="person"
-                                href={`/${params?.locale}/login`}
-                                selected={isActive('login')}>
+                                href="/sign-up"
+                                selected={isActive('sign-up') || isActive('sign-in')}>
                                 <Flex paddingX="2">Login</Flex>
                             </ToggleButton>
                         </Flex>

@@ -19,10 +19,18 @@
     "heading": "Contact Us",
     "subheading": "We'd love to hear from you"
   },
-  "Login": {
-    "title": "Login",
+  "SignUp": {
+    "title": "Sign Up",
+    "description": "Create your account",
+    "heading": "Get Started",
+    "subheading": "Join us today",
+    "signInLink": "Already have an account? Sign in"
+  },
+  "SignIn": {
+    "title": "Sign In",
     "description": "Sign in to your account",
     "heading": "Welcome Back",
-    "subheading": "Sign in to continue"
+    "subheading": "Sign in to continue",
+    "signUpLink": "Don't have an account? Sign up"
   }
 }
