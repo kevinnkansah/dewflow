@@ -12,6 +12,9 @@ const i18nOptions = {
 const routes = {
     '/':        true,
     '/about':   true,
+    '/pricing': true,
+    '/contact': true,
+    '/login':   true,
     '/work':    true,
     '/blog':    true,
     '/gallery': true,

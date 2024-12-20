@@ -4,91 +4,72 @@
 
 ```
 src/
-├── app/                    # Next.js App Router directory
-│   ├── [locale]/          # Locale-based routing
-│   │   ├── layout.tsx     # Root layout with providers
+├── app/                    # Next.js App Router pages
+│   ├── [locale]/          # Locale-specific routes
 │   │   ├── page.tsx       # Home page
-│   │   ├── about/         # About page
-│   │   ├── pricing/       # Pricing page
-│   │   ├── contact/       # Contact page
-│   │   └── work/          # Work pages
-│   └── resources/         # Shared resources and utilities
+│   │   ├── about/        # About page
+│   │   ├── pricing/      # Pricing page
+│   │   ├── contact/      # Contact page
+│   │   └── login/        # Login page
+│   └── resources/        # App resources and config
 ├── components/            # Shared React components
-│   ├── Header/           # Navigation and header components
-│   └── Footer/           # Footer components
-├── i18n/                 # Internationalization setup
-│   ├── routing.ts        # i18n routing configuration
-│   └── messages/         # Translation files
+│   ├── Header.tsx        # Navigation header
+│   └── Footer.tsx        # Page footer
+├── contexts/             # React context providers
+├── docs/                 # Project documentation
+├── i18n/                 # Internationalization
+│   ├── messages/         # Translation files
+│   └── routing.ts        # i18n routing config
+├── lib/                  # Library code
 ├── once-ui/             # UI component library
-│   ├── components/      # Base UI components
-│   ├── styles/          # Global styles and themes
-│   └── tokens/          # Design tokens
-└── docs/               # Project documentation
+├── pages/               # Legacy pages (if any)
+├── types/               # TypeScript type definitions
+└── utils/               # Utility functions
+
 ```
 
-## Key Components
+## Key Files
 
-### App Router (`app/`)
-- Uses Next.js 13+ App Router for file-system based routing
-- Each page is a Server Component by default
-- Locale-based routing with `[locale]` dynamic segment
-- Shared layouts with `layout.tsx`
+- `middleware.ts`: Handles internationalization and routing
+- `app/resources/config.js`: Application configuration **VERY IMPORTANT**
+- `i18n/messages/en.json`: English translations
+- `components/Header.tsx`: Main navigation component
 
-### Components (`components/`)
-- Reusable React components
-- Each component has its own directory with:
-  - Component file (`.tsx`)
-  - Styles (`.module.scss`)
-  - Tests (`.test.tsx`)
-  - Type definitions (if needed)
+## Page Structure
 
-### Internationalization (`i18n/`)
-- Uses `next-intl` for translations
-- Supports multiple languages
-- Locale-based routing
-- Message files for each supported language
+Each page follows a consistent structure:
 
-### UI Library (`once-ui/`)
-- Custom UI component library
-- Design system implementation
-- Shared styles and themes
-- Design tokens for consistency
+```typescript
+// Metadata generation
+export async function generateMetadata({ params: { locale } }) {
+    const t = await getTranslations();
+    return {
+        title: t('Page.title'),
+        description: t('Page.description'),
+    };
+}
 
-## File Naming Conventions
+// Page component
+export default async function Page() {
+    const t = await getTranslations();
+    return (
+        <Flex direction="column" gap="12" alignItems="center" paddingY="24">
+            {/* Page content */}
+        </Flex>
+    );
+}
+```
 
-### Components
-- PascalCase for component files: `Header.tsx`
-- Kebab-case for styles: `header.module.scss`
-- Same name for tests: `Header.test.tsx`
+## Naming Conventions
 
-### Pages
-- Use `page.tsx` for page components
-- Use `layout.tsx` for layout components
-- Use `loading.tsx` for loading states
-- Use `error.tsx` for error boundaries
+- **Components**: PascalCase (e.g., `Header.tsx`)
+- **Pages**: lowercase (e.g., `page.tsx`)
+- **Utilities**: camelCase (e.g., `formatDate.ts`)
+- **Constants**: UPPER_CASE
+- **Types/Interfaces**: PascalCase with Type/Interface suffix
 
-### Utilities
-- Camel case for utility files: `formatDate.ts`
-- Type definitions in separate files: `types.ts`
+## Internationalization
 
-## Best Practices
-
-1. **Component Organization**
-   - Keep components small and focused
-   - Use composition over inheritance
-   - Separate business logic from UI components
-
-2. **Page Structure**
-   - Use Server Components by default
-   - Client Components when needed (use "use client" directive)
-   - Keep pages thin, move logic to components
-
-3. **Styling**
-   - Use CSS Modules for component-specific styles
-   - Follow BEM naming convention
-   - Use design tokens from once-ui
-
-4. **Type Safety**
-   - Use TypeScript for all new code
-   - Define interfaces for component props
-   - Use strict type checking
+- Translations are stored in `/i18n/messages/{locale}.json`
+- Each page has its own translation namespace
+- Format: `PageName.key` (e.g., `About.title`)

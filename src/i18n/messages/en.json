@@ -1,0 +1,28 @@
+{
+  "Index": {
+    "title": "Home",
+    "description": "Welcome to our application"
+  },
+  "About": {
+    "title": "About Us",
+    "description": "Learn more about our company"
+  },
+  "Pricing": {
+    "title": "Pricing",
+    "description": "View our pricing plans",
+    "heading": "Our Pricing Plans",
+    "subheading": "Choose the plan that works best for you"
+  },
+  "Contact": {
+    "title": "Contact Us",
+    "description": "Get in touch with us",
+    "heading": "Contact Us",
+    "subheading": "We'd love to hear from you"
+  },
+  "Login": {
+    "title": "Login",
+    "description": "Sign in to your account",
+    "heading": "Welcome Back",
+    "subheading": "Sign in to continue"
+  }
+}
