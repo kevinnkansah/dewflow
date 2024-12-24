@@ -44,12 +44,12 @@ const effects = {
 
 const style = {
     theme:       'dark',         // dark | light
-    neutral:     'slate',         // sand | gray | slate
-    brand:       'emerald',      // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
-    accent:      'cyan',       // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
+    neutral:     'gray',         // sand | gray | slate
+    brand:       'aqua',      // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
+    accent:      'emerald',       // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
     solid:       'color',     // color | contrast
-    solidStyle:  'plastic',         // flat | plastic
-    border:      'conservative',      // rounded | playful | conservative
+    solidStyle:  'flat',         // flat | plastic
+    border:      'playful',      // rounded | playful | conservative
     surface:     'translucent',  // filled | translucent
     transition:  'all'           // all | micro | macro
 }
