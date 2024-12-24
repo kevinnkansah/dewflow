@@ -2,6 +2,7 @@
 
 import { UserButton } from '@clerk/nextjs'
 import { useRouter } from 'next/navigation'
+import { dark } from '@clerk/themes'
 
 const UserIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
@@ -26,7 +27,19 @@ export function UserNav() {
   const router = useRouter()
 
   return (
-    <UserButton afterSignOutUrl="/">
+    <UserButton 
+      afterSignOutUrl="/"
+      appearance={{
+        baseTheme: dark,
+        elements: {
+          userButtonPopoverCard: "bg-gray-900 border border-gray-800",
+          userButtonPopoverActionButton: "hover:bg-gray-800 text-gray-300",
+          userButtonPopoverActionButtonText: "text-gray-300",
+          userButtonPopoverActionButtonIcon: "text-gray-500",
+          userButtonTrigger: "rounded-lg hover:opacity-80"
+        }
+      }}
+    >
       <UserButton.MenuItems>
         <UserButton.Action
           label="Account settings"
