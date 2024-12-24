@@ -1,8 +1,8 @@
 'use client'
 
-import { UserButton } from '@clerk/nextjs'
+import { useClerk, useUser } from '@clerk/nextjs'
 import { useRouter } from 'next/navigation'
-import { dark } from '@clerk/themes'
+import { UserMenu } from '@/once-ui/components'
 
 const UserIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
@@ -23,41 +23,72 @@ const SettingsIcon = () => (
   </svg>
 )
 
+const getImageUrl = (baseUrl: string, width: number) => {
+  return `${baseUrl}?width=${width}`
+}
+
 export function UserNav() {
   const router = useRouter()
+  const { signOut, openUserProfile } = useClerk()
+  const { user } = useUser()
+
+  if (!user) return null
+
+  const handleOptionSelect = async (option: { value: string }) => {
+    switch (option.value) {
+      case 'account':
+        openUserProfile()
+        break
+      case 'billing':
+        router.push('/billing')
+        break
+      case 'settings':
+        router.push('/settings')
+        break
+      case 'signout':
+        await signOut()
+        router.push('/')
+        break
+    }
+  }
+
+  // Get the base image URL from Clerk
+  const imageUrl = user.imageUrl
+  const avatar = imageUrl ? (
+    <img 
+      crossOrigin="anonymous"
+      srcSet={`${getImageUrl(imageUrl, 80)} 1x, ${getImageUrl(imageUrl, 160)} 2x`}
+      src={getImageUrl(imageUrl, 160)}
+      alt={`${user.fullName || user.username}'s avatar`}
+      title={user.fullName || user.username || ''}
+      className="w-full h-full object-cover rounded-full"
+    />
+  ) : null
 
   return (
-    <UserButton 
-      afterSignOutUrl="/"
-      appearance={{
-        baseTheme: dark,
-        elements: {
-          userButtonPopoverCard: "bg-gray-900 border border-gray-800",
-          userButtonPopoverActionButton: "hover:bg-gray-800 text-gray-300",
-          userButtonPopoverActionButtonText: "text-gray-300",
-          userButtonPopoverActionButtonIcon: "text-gray-500",
-          userButtonTrigger: "rounded-lg hover:opacity-80"
-        }
+    <UserMenu
+      name={user.fullName || user.username || 'User'}
+      subline={user.primaryEmailAddress?.emailAddress}
+      avatarProps={{
+        empty: !imageUrl,
+        value: avatar as any
       }}
-    >
-      <UserButton.MenuItems>
-        <UserButton.Action
-          label="Account settings"
-          labelIcon={<UserIcon />}
-          open="account"
-        />
-        <UserButton.Action
-          label="Billing"
-          labelIcon={<PaymentIcon />}
-          onClick={() => router.push('/billing')}
-        />
-        <UserButton.Action
-          label="Settings"
-          labelIcon={<SettingsIcon />}
-          onClick={() => router.push('/settings')}
-        />
-        <UserButton.Action label="signOut" />
-      </UserButton.MenuItems>
-    </UserButton>
+      dropdownAlignment="right"
+      dropdownProps={{
+        onOptionSelect: handleOptionSelect
+      }}
+      dropdownOptions={[
+        {
+          label: 'Account settings',
+          value: 'account',
+          hasPrefix: <UserIcon />
+        },
+        {
+          dividerAfter: true,
+          label: 'Sign out',
+          value: 'signout'
+        }
+      ]}
+    />
   )
 }
