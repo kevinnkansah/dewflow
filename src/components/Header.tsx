@@ -13,6 +13,7 @@ import { Locale, usePathname, useRouter } from '@/i18n/routing';
 import { renderContent } from "@/app/resources";
 import { useTranslations } from "next-intl";
 import { i18n } from "@/app/resources/config";
+import { Navigation } from './Navigation';
 
 type TimeDisplayProps = {
     timeZone: string;
@@ -29,24 +30,20 @@ const TimeDisplay: React.FC<TimeDisplayProps> = ({ timeZone, locale = 'en-GB' })
                 timeZone,
                 hour: '2-digit',
                 minute: '2-digit',
-                second: '2-digit',
-                hour12: false,
+                hour12: false
             };
-            const timeString = new Intl.DateTimeFormat(locale, options).format(now);
-            setCurrentTime(timeString);
+
+            setCurrentTime(new Intl.DateTimeFormat(locale, options).format(now));
         };
 
+        // Update immediately and then every minute
         updateTime();
-        const intervalId = setInterval(updateTime, 1000);
+        const interval = setInterval(updateTime, 60000);
 
-        return () => clearInterval(intervalId);
+        return () => clearInterval(interval);
     }, [timeZone, locale]);
 
-    return (
-        <>
-            {currentTime}
-        </>
-    );
+    return <span>{currentTime}</span>;
 };
 
 export default TimeDisplay;
@@ -132,12 +129,7 @@ export const Header = () => {
                                 selected={isActive('contact')}>
                                 <Flex paddingX="2" hide="s">Contact</Flex>
                             </ToggleButton>
-                            <ToggleButton
-                                prefixIcon="person"
-                                href="/sign-up"
-                                selected={isActive('sign-up') || isActive('sign-in')}>
-                                <Flex paddingX="2">Login</Flex>
-                            </ToggleButton>
+                            <Navigation />
                         </Flex>
                     </Flex>
                 </Flex>
