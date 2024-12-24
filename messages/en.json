@@ -78,5 +78,9 @@
             "submit": "Sign In",
             "forgotPassword": "Forgot Password?"
         }
+    },
+    "signup": {
+        "title": "Create Account",
+        "description": "Create your account to get started"
     }
 }

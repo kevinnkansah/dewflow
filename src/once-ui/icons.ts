@@ -34,7 +34,8 @@ import {
 	FaDiscord,
 	FaGithub,
 	FaLinkedin,
-	FaXTwitter
+	FaXTwitter,
+	FaGoogle
 } from "react-icons/fa6";
 
 import {LiaPaperPlane} from "react-icons/lia";
@@ -68,4 +69,5 @@ export const iconLibrary: Record<string, IconType> = {
 	github: FaGithub,
 	linkedin: FaLinkedin,
 	x: FaXTwitter,
+	google: FaGoogle
 };
