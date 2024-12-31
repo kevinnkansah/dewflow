@@ -30,7 +30,7 @@ const UserMenu: React.FC<UserMenuProps> = ({
             <Flex
                 direction="column"
                 padding="4"
-                radius="full"
+                radius="m"
                 border={selected ? 'neutral-medium' : 'transparent'}
                 background={selected ? 'neutral-strong' : 'transparent'}
                 style={{ cursor: 'pointer' }}
