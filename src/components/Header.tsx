@@ -97,7 +97,7 @@ export const Header = () => {
                 </Flex>
                 <Flex fillWidth justifyContent="center">
                     <Flex
-                        background="surface" border="neutral-medium" borderStyle="solid-1" radius="m-4" shadow="l"
+                        background="surface" border="neutral-medium" borderStyle="solid" radius="m-4" shadow="l"
                         padding="4"
                         justifyContent="center">
                         <Flex
@@ -141,7 +141,7 @@ export const Header = () => {
                         gap="20">
                         {routing.locales.length > 1 &&
                             <Flex
-                                background="surface" border="neutral-medium" borderStyle="solid-1" radius="m-4" shadow="l"
+                                background="surface" border="neutral-medium" borderStyle="solid" radius="m-4" shadow="l"
                                 padding="4" gap="2"
                                 justifyContent="center">
                                 {i18n && routing.locales.map((locale, index) => (
