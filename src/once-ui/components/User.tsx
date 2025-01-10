@@ -27,7 +27,7 @@ const User = forwardRef<HTMLDivElement, UserProps>(
     return (
       <Flex ref={ref} alignItems="center" gap="8" className={classNames(className)}>
         <Avatar
-          size="m"
+          size="s"
           src={src}
           value={value}
           empty={isEmpty}
