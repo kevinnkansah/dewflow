@@ -29,16 +29,23 @@ const protectedRoutes = {
 const effects = {
     mask: 'cursor',             // none | cursor | topLeft | topRight | bottomLeft | bottomRight
     gradient: {
-        display: true,
+        display: false,
         opacity: 0.7            // 0 - 1
     },
     dots: {
-        display: true,
+        display: false,
         opacity: 0.5,           // 0 - 1
-        size: '20'              // 2 | 4 | 8 | 12 | 16 | 20 | 24 | 32 | 40 | 48 | 56 | 634
+        size: '20'              // 2 | 4 | 8 | 12 | 16 | 20 | 24 | 32 | 40 | 48 | 56 | 64
+    },
+    grid: {
+        display: true,
+        opacity: 1,             // 0 - 1
+        width: "0.25rem",
+        height: "0.25rem",
+        color: "neutral-alpha-medium"
     },
     lines: {
-        display: true,
+        display: false,
     },
 }
 

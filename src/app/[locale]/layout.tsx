@@ -16,12 +16,12 @@ import { ClerkProvider } from '@clerk/nextjs';
 
 import { routing } from "@/i18n/routing";
 import { renderContent } from "@/app/resources";
-import { Background, Flex } from "@/once-ui/components";
+import { Background, Column, Flex, ToastProvider } from "@/once-ui/components";
+import { SpacingToken } from "@/once-ui/types";
 
 export async function generateMetadata(
 	{ params: { locale }}: { params: { locale: string }}
 ) {
-
 	const t = await getTranslations();
 	const { person, home } = renderContent(t);
 
@@ -61,14 +61,8 @@ type FontConfig = {
     variable: string;
 };
 
-/*
-	Replace with code for secondary and tertiary fonts
-	from https://once-ui.com/customize
-*/
 const secondary: FontConfig | undefined = undefined;
 const tertiary: FontConfig | undefined = undefined;
-/*
-*/
 
 const code = Source_Code_Pro({
 	variable: '--font-code',
@@ -83,7 +77,7 @@ interface RootLayoutProps {
 
 export function generateStaticParams() {
 	return routing.locales.map((locale) => ({locale}));
-  }
+}
 
 export default async function RootLayout({
 	children,
@@ -91,51 +85,97 @@ export default async function RootLayout({
 } : RootLayoutProps) {
 	unstable_setRequestLocale(locale);
 	const messages = await getMessages();
+	
 	return (
 		<NextIntlClientProvider messages={messages}>
 			<ClerkProvider>
 				<Flex
-					as="html" lang="en"
+					as="html" 
+					lang="en"
+					fillHeight
 					background="page"
-					data-neutral={style.neutral} data-brand={style.brand} data-accent={style.accent}
-					data-solid={style.solid} data-solid-style={style.solidStyle}
-					data-theme={style.theme}
+					data-neutral={style.neutral}
+					data-brand={style.brand}
+					data-accent={style.accent}
 					data-border={style.border}
+					data-theme={style.theme}
+					data-solid={style.solid}
+					data-solid-style={style.solidStyle}
 					data-surface={style.surface}
 					data-transition={style.transition}
+					data-scaling={style.scaling}
 					className={classNames(
 						primary.variable,
-						secondary ? secondary.variable : '',
-						tertiary ? tertiary.variable : '',
-						code.variable)}>
-					<Flex style={{minHeight: '100vh'}}
-						as="body"
-						fillWidth margin="0" padding="0"
-						direction="column">
-						<Background
-							mask={effects.mask as any}
-							gradient={effects.gradient as any}
-							dots={effects.dots as any}
-							lines={effects.lines as any}/>
-						<Flex
-							fillWidth
-							minHeight="16">
-						</Flex>
-						<Header/>
-						<Flex
-							zIndex={0}
-							fillWidth paddingY="l" paddingX="l"
-							justifyContent="center" flex={1}>
+						code.variable,
+						secondary?.variable,
+						tertiary?.variable,
+					)}
+				>
+					<ToastProvider>
+						<Column as="body" fillWidth margin="0" padding="0">
+							<Background
+								position="absolute"
+								mask={effects.mask === 'cursor' ? {
+									cursor: true,
+									x: 50,
+									y: 50,
+									radius: 100,
+								} : effects.mask === 'none' ? undefined : {
+									x: effects.mask === 'topLeft' ? 0 : effects.mask === 'topRight' ? 100 : effects.mask === 'bottomLeft' ? 0 : 100,
+									y: effects.mask === 'topLeft' || effects.mask === 'topRight' ? 0 : 100,
+									radius: 100,
+								}}
+								gradient={effects.gradient.display ? {
+									display: true,
+									opacity: Math.round(effects.gradient.opacity * 100) as 0 | 10 | 20 | 30 | 40 | 50 | 60 | 70 | 80 | 90 | 100,
+									x: 100,
+									y: 60,
+									width: 70,
+									height: 50,
+									tilt: -40,
+									colorStart: "accent-background-strong",
+									colorEnd: "page-background",
+								} : undefined}
+								dots={effects.dots.display ? {
+									display: true,
+									opacity: Math.round(effects.dots.opacity * 100) as 0 | 10 | 20 | 30 | 40 | 50 | 60 | 70 | 80 | 90 | 100,
+									size: effects.dots.size as SpacingToken,
+								} : undefined}
+								grid={effects.grid.display ? {
+									display: true,
+									opacity: Math.round(effects.grid.opacity * 100) as 0 | 10 | 20 | 30 | 40 | 50 | 60 | 70 | 80 | 90 | 100,
+									width: effects.grid.width,
+									height: effects.grid.height,
+									color: effects.grid.color,
+								} : undefined}
+								lines={effects.lines.display ? {
+									display: true,
+									opacity: 100 as const,
+									size: "4" as const
+								} : undefined}
+							/>
+							<Header />
 							<Flex
-								justifyContent="center"
-								fillWidth minHeight="0">
-								<RouteGuard>
-									{children}
-								</RouteGuard>
+								zIndex={0}
+								fillWidth 
+								paddingY="l" 
+								paddingX="l"
+								justifyContent="center" 
+								flex={1}
+							>
+								<Flex
+									justifyContent="center"
+									fillWidth 
+									minHeight="0"
+								>
+									<RouteGuard>
+										{children}
+									</RouteGuard>
+								</Flex>
 							</Flex>
-						</Flex>
-						<Footer/>
-					</Flex>
+							<Footer />
+						</Column>
+					</ToastProvider>
 				</Flex>
 			</ClerkProvider>
 		</NextIntlClientProvider>
