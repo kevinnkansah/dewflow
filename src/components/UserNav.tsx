@@ -2,7 +2,7 @@
 
 import { useClerk, useUser } from '@clerk/nextjs'
 import { useRouter } from 'next/navigation'
-import { UserMenu, Flex } from '@/once-ui/components'
+import { UserMenu, Flex, Option, Avatar, Text, Line } from '@/once-ui/components'
 import { iconLibrary } from '@/once-ui/icons'
 
 const getImageUrl = (baseUrl: string, width: number) => {
@@ -49,38 +49,35 @@ export function UserNav() {
 
   const PersonIcon = iconLibrary.person
 
+  const dropdownContent = (
+    <Flex direction="column" padding="4">
+      <Flex direction="column" gap="8">
+        <Option
+          hasPrefix={<PersonIcon className="w-5 h-5" />}
+          label="Account settings"
+          onClick={() => handleOptionSelect({ value: 'account' })}
+          value="account"
+        />
+        <Line />
+        <Option
+          label="Sign out"
+          onClick={() => handleOptionSelect({ value: 'signout' })}
+          value="signout"
+        />
+      </Flex>
+    </Flex>
+  )
+
   return (
-    <Flex 
-      data-theme="dark"
-      data-surface="filled"
-    >
+    <Flex style={{ position: 'relative' }} alignItems="center">
       <UserMenu
         name={user.firstName || user.username || 'User'}
-        subline={user.primaryEmailAddress?.emailAddress}
-        tagProps={{
-          label: 'Free Plan',
-          variant: 'brand'
-        }}
         avatarProps={{
           empty: !imageUrl,
           value: avatar as any
         }}
-        dropdownAlignment="right"
-        dropdownProps={{
-          onOptionSelect: handleOptionSelect
-        }}
-        dropdownOptions={[
-          {
-            label: 'Account settings',
-            value: 'account',
-            hasPrefix: <PersonIcon className="w-5 h-5" />
-          },
-          {
-            dividerAfter: true,
-            label: 'Sign out',
-            value: 'signout'
-          }
-        ]}
+        style={{ width: 'auto' }}
+        dropdown={dropdownContent}
       />
     </Flex>
   )
