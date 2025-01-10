@@ -98,10 +98,10 @@ export const Header = () => {
                 <Flex fillWidth justifyContent="center">
                     <Flex
                         background="surface" border="neutral-medium" borderStyle="solid" radius="m-4" shadow="l"
-                        padding="4"
+                        padding="8"
                         justifyContent="center">
                         <Flex
-                            gap="4"
+                            gap="12"
                             textVariant="body-default-s">
                             <ToggleButton
                                 prefixIcon="home"

@@ -15,11 +15,14 @@
     .position {
         top: auto;
         position: fixed;
-        bottom: var(--static-space-24);
+        bottom: var(--static-space-48);
+        width: 100%;
+        padding: 0;
     }
 
     .mask {
         transform: rotate(180deg);
         bottom: 0;
+        height: var(--static-space-120);
     }
 }

@@ -65,7 +65,17 @@ const Option = forwardRef<HTMLDivElement, OptionProps>(
           })}
           data-value={value}
         >
-          {hasPrefix && <Flex className={styles.prefix}>{hasPrefix}</Flex>}
+          {hasPrefix && (
+            <Flex
+              alignItems="center"
+              justifyContent="center"
+              minWidth="24"
+              minHeight="24"
+              className={styles.prefix}
+            >
+              {hasPrefix}
+            </Flex>
+          )}
           <Flex
             alignItems="flex-start"
             style={{
