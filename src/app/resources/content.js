@@ -1,14 +1,14 @@
 import { InlineCode } from "@/once-ui/components";
 
 const person = {
-    firstName: 'Selene',
-    lastName:  'Yu',
+    firstName: 'Kevin',
+    lastName:  'Nkansah',
     get name() {
         return `${this.firstName} ${this.lastName}`;
     },
     role:      'Design Engineer',
     avatar:    '/images/avatar.jpg',
-    location:  'Asia/Jakarta',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+    location:  'Africa/Johannesburg',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
     languages: ['English', 'Bahasa']  // optional: Leave the array empty if you don't want to display languages
 }
 
@@ -86,7 +86,7 @@ const about = {
                 images: [ // optional: leave the array empty if you don't want to display images
                     {
                         src: '/images/projects/project-01/cover-01.jpg',
-                        alt: 'Once UI Project',
+                        alt: 'Project',
                         width: 16,
                         height: 9
                     }
@@ -124,7 +124,7 @@ const about = {
         skills: [
             {
                 title: 'Figma',
-                description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
+                description: <>Able to prototype in Figma with unnatural speed.</>,
                 images: [
                     {
                         src: '/images/projects/project-01/cover-02.jpg',
@@ -142,7 +142,7 @@ const about = {
             },
             {
                 title: 'Next.js',
-                description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
+                description: <>Building next gen apps with Next.js + Supabase.</>,
                 images: [
                     {
                         src: '/images/projects/project-01/cover-04.jpg',

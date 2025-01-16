@@ -1,4 +1,5 @@
 import "@/styles/tailwind.css";
+import "@/styles/fonts.css";
 import "@/once-ui/styles/index.scss";
 import "@/once-ui/tokens/index.scss";
 

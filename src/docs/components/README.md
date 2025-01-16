@@ -2,7 +2,7 @@
 
 ## Overview
 
-The application uses a combination of custom components and the Once UI component library to maintain a consistent design system.
+The application uses a combination of custom components to maintain a consistent design system.
 
 ## Core Components
 
@@ -41,7 +41,7 @@ export default async function Page() {
 }
 ```
 
-## Once UI Components
+## Components
 
 ### Layout Components
 
@@ -69,7 +69,6 @@ export default async function Page() {
    - Document props and usage
 
 2. **Styling**
-   - Use Once UI components when possible
    - Follow design system guidelines
    - Maintain responsive design
 

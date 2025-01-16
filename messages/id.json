@@ -9,18 +9,18 @@
     },
     "home": {
         "label": "Beranda",
-        "title": "Portofolio {name}",
-        "description": "Situs web portofolio yang menampilkan karya saya sebagai {role}",
-        "headline": "Insinyur desain dan pembangun",
-        "subline": "Saya Selene, seorang insinyur desain di FLY, di mana saya membuat pengalaman pengguna yang intuitif. Setelah jam kerja, saya mengerjakan proyek-proyek pribadi."
+        "title": "Beranda",
+        "description": "Selamat datang di situs web saya",
+        "headline": "Insinyur dan pembangun",
+        "subline": "Menciptakan pengalaman pengguna yang intuitif."
     },
     "about": {
         "label": "Tentang",
-        "title": "Tentang Saya",
-        "description": "Kenali {name}, {role} dari {location}",
+        "title": "Tentang",
+        "description": "Pelajari lebih lanjut tentang saya",
         "intro": {
             "title": "Pengantar",
-            "description": "Selene adalah seorang insinyur desain yang berbasis di Jakarta dengan hasrat untuk mengubah tantangan kompleks menjadi solusi desain yang sederhana dan elegan. Karyanya meliputi antarmuka digital, pengalaman interaktif, dan pertemuan antara desain dan teknologi."
+            "description": "null."
         },
         "work": {
             "title": "Pengalaman Kerja",
@@ -52,28 +52,28 @@
             "title": "Kemampuan Teknis",
             "skills": {
                 "Figma": {
-                    "description": "Mampu membuat prototipe di Figma dengan Once UI dengan kecepatan luar biasa."
+                    "description": "Mampu membuat prototipe di Figma dengan kecepatan luar biasa."
                 },
                 "Nextjs": {
-                    "description": "Membangun aplikasi generasi berikutnya dengan Next.js + Once UI + Supabase."
+                    "description": "Membangun aplikasi generasi berikutnya dengan Next.js + Supabase."
                 }
             }
         }
     },
     "blog": {
         "label": "Blog",
-        "title": "Menulis tentang desain dan teknologi...",
-        "description": "Baca apa yang {name} lakukan baru-baru ini"
+        "title": "Menulis tentang teknologi...",
+        "description": "Baca pembaruan terbaru saya"
     },
     "work": {
         "label": "Karya",
-        "title": "Proyek Saya",
-        "description": "Proyek desain dan pengembangan oleh {name}"
+        "title": "Proyek",
+        "description": "Proyek desain dan pengembangan"
     },
     "gallery": {
         "label": "Galeri",
-        "title": "Galeri Foto Saya",
-        "description": "Koleksi foto oleh {name}"
+        "title": "Galeri Foto",
+        "description": "Koleksi foto"
     },
     "projectCard": {
         "label": "Baca Studi Kasus"

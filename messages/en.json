@@ -9,15 +9,15 @@
     },
     "home": {
         "label": "Home",
-        "title": "{name}'s Portfolio",
-        "description": "Portfolio website showcasing my work as a {role}",
-        "headline": "Design engineer and builder",
-        "subline": "I'm Selene, a design engineer at FLY, where I craft intuitive user experiences. After hours, I build my own projects."
+        "title": "Home",
+        "description": "Welcome to my website",
+        "headline": "Engineer and builder",
+        "subline": "Crafting intuitive user experiences."
     },
     "about": {
         "label": "About",
         "title": "About",
-        "description": "Meet {name}, {role} from {location}",
+        "description": "Learn more about me",
         "intro": {
             "title": "Introduction",
             "description": "null."
@@ -25,18 +25,18 @@
     },
     "blog": {
         "label": "Blog",
-        "title": "Writing about design and tech...",
-        "description": "Read what {name} has been up to recently"
+        "title": "Writing about tech...",
+        "description": "Read my latest updates"
     },
     "work": {
         "label": "Work",
-        "title": "My projects",
-        "description": "Design and dev projects by {name}"
+        "title": "Projects",
+        "description": "Design and development projects"
     },
     "gallery": {
         "label": "Gallery",
-        "title": "My photo gallery",
-        "description": "A photo collection by {name}"
+        "title": "Photo gallery",
+        "description": "A collection of photos"
     },
     "pricing": {
         "title": "Pricing Plans",
