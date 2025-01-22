@@ -1,0 +1,74 @@
+{
+  "Index": {
+    "title": "Analisis Data untuk UKM Afrika Selatan | Keputusan Bisnis Cerdas",
+    "description": "Platform analisis data terjangkau yang dibangun untuk UKM Afrika Selatan. Buat keputusan bisnis lebih cerdas dengan wawasan berbasis AI.",
+    "hero": {
+      "title": "Analisis Terjangkau untuk UKM Afrika Selatan",
+      "description": "Buat keputusan berbasis data tanpa biaya perusahaan besar. Dibuat khusus untuk UKM seperti Anda.",
+      "getStarted": "Mulai Gratis",
+      "bookDemo": "Pesan Demo"
+    },
+    "benefits": {
+      "title": "Mengapa Memilih Platform Kami?",
+      "salesForecasting": {
+        "title": "Peramalan Penjualan",
+        "description": "Prediksi penjualan masa depan Anda dengan akurasi berbasis AI. Buat keputusan inventaris dengan percaya diri."
+      },
+      "customerInsights": {
+        "title": "Wawasan Pelanggan",
+        "description": "Pahami pelanggan Anda lebih baik. Segmentasi dan target pasar Anda secara efektif."
+      },
+      "financialTracking": {
+        "title": "Pelacakan Keuangan",
+        "description": "Pantau arus kas dan pengeluaran Anda secara real-time. Kendalikan keuangan Anda."
+      }
+    },
+    "calculator": {
+      "title": "Hitung Potensi Penghematan Anda",
+      "monthlyRevenue": "Pendapatan Bulanan (R)",
+      "currentCosts": "Biaya Analisis Saat Ini (R)",
+      "potentialSavings": "Potensi Penghematan Bulanan",
+      "basedOn": "Berdasarkan rata-rata penghematan pelanggan"
+    },
+    "testimonials": {
+      "title": "Dipercaya oleh Bisnis yang Berkembang",
+      "quote": "Alat ini membantu kami mengurangi biaya sebesar 20% dan membuat keputusan inventaris yang lebih baik. Ini persis yang dibutuhkan bisnis kami.",
+      "author": "Sarah Johnson",
+      "role": "CEO, Cape Town Retail Solutions"
+    },
+    "cta": {
+      "title": "Siap Mengubah Bisnis Anda?",
+      "description": "Bergabunglah dengan ratusan UKM Afrika Selatan yang membuat keputusan lebih cerdas dengan data."
+    }
+  },
+  "About": {
+    "title": "Tentang Kami",
+    "description": "Pelajari lebih lanjut tentang perusahaan kami"
+  },
+  "Pricing": {
+    "title": "Harga",
+    "description": "Lihat paket harga kami",
+    "heading": "Paket Harga Kami",
+    "subheading": "Pilih paket yang paling sesuai untuk Anda"
+  },
+  "Contact": {
+    "title": "Hubungi Kami",
+    "description": "Hubungi kami",
+    "heading": "Hubungi Kami",
+    "subheading": "Kami senang mendengar dari Anda"
+  },
+  "SignUp": {
+    "title": "Daftar",
+    "description": "Buat akun Anda",
+    "heading": "Mulai",
+    "subheading": "Bergabunglah dengan kami hari ini",
+    "signInLink": "Sudah punya akun? Masuk"
+  },
+  "SignIn": {
+    "title": "Masuk",
+    "description": "Masuk ke akun Anda",
+    "heading": "Selamat Datang Kembali",
+    "subheading": "Masuk untuk melanjutkan",
+    "signUpLink": "Belum punya akun? Daftar"
+  }
+}

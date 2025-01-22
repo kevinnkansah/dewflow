@@ -143,6 +143,24 @@ export default async function FeaturesPage() {
    - Ensure keyboard navigation
    - Test with screen readers
 
+## Avoiding Common Errors
+
+1. **Ensure All Imports Are Correct**
+   - Verify that all components and utilities are correctly imported.
+   - Check for any missing or incorrect imports that could lead to runtime errors.
+
+2. **Verify Translation Keys**
+   - Ensure that all translation keys used in the page are defined in the `en.json` file.
+   - Double-check for typos or mismatches in translation keys.
+
+3. **Check Component Props**
+   - Ensure that all required props are passed to components.
+   - Verify the types of props to avoid type errors.
+
+4. **Update Content Files**
+   - Ensure that content files like `content.js` include all necessary properties.
+   - Update the content structure to match the expected format in the page.
+
 ## Testing
 
 1. Create a test file: `page.test.tsx`

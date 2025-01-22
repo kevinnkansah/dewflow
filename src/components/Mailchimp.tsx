@@ -64,7 +64,7 @@ export const Mailchimp = (
             position="relative"
             fillWidth padding="xl"  radius="l" marginBottom="m"
             direction="column" alignItems="center" align="center"
-            background="surface" border="neutral-medium" borderStyle="solid-1">
+            background="accent-medium" border="neutral-medium" borderStyle="solid">
             <Background
                 position="absolute"
                 mask={mailchimp.effects.mask as any}
@@ -114,11 +114,11 @@ export const Mailchimp = (
                             }
                         }}
                         onBlur={handleBlur}
-                        error={error}/>
+                        error={error !== ''}/>
                     <div style={{display: 'none'}}>
                         <input type="checkbox" readOnly name="group[3492][1]" id="mce-group[3492]-3492-0" value="" checked/>
                     </div>
-                    <div id="mce-responses" className="clearfalse">
+                    <div id="mce-responses" className="clear false">
                         <div className="response" id="mce-error-response" style={{display: 'none'}}></div>
                         <div className="response" id="mce-success-response" style={{display: 'none'}}></div>
                     </div>

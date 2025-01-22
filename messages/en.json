@@ -9,10 +9,37 @@
     },
     "home": {
         "label": "Home",
-        "title": "Home",
-        "description": "Welcome to my website",
-        "headline": "Engineer and builder",
-        "subline": "Crafting intuitive user experiences."
+        "title": "Data Analytics for South African SMEs | Smart Business Decisions",
+        "description": "Affordable data analytics platform built for South African SMEs. Make smarter business decisions with AI-powered insights.",
+        "headline": "Affordable Analytics for South African SMEs",
+        "subline": "Make data-driven decisions without the enterprise price tag. Built for SMEs like yours.",
+        "getStarted": "Get Started Free",
+        "bookDemo": "Book a Demo",
+        "benefitsTitle": "Why Choose Our Platform?",
+        "benefits": {
+            "salesForecasting": {
+                "title": "Sales Forecasting",
+                "description": "Predict your future sales with AI-powered accuracy. Make inventory decisions with confidence."
+            },
+            "customerInsights": {
+                "title": "Customer Insights",
+                "description": "Understand your customers better. Segment and target your market effectively."
+            },
+            "financialTracking": {
+                "title": "Financial Tracking",
+                "description": "Monitor your cash flow and expenses in real-time. Stay on top of your finances."
+            }
+        },
+        "testimonial": {
+            "title": "Trusted by Growing Businesses",
+            "quote": "This tool helped us reduce costs by 20% and make better inventory decisions. It's exactly what our business needed.",
+            "author": "Sarah Johnson",
+            "role": "CEO, Cape Town Retail Solutions"
+        },
+        "cta": {
+            "title": "Ready to Transform Your Business?",
+            "description": "Join hundreds of South African SMEs making smarter decisions with data."
+        }
     },
     "about": {
         "label": "About",
@@ -49,13 +76,8 @@
             },
             "pro": {
                 "name": "Pro",
-                "price": "$19/month",
+                "price": "$29/month",
                 "features": ["All Basic features", "Feature 4", "Feature 5"]
-            },
-            "enterprise": {
-                "name": "Enterprise",
-                "price": "Custom",
-                "features": ["All Pro features", "Feature 6", "Feature 7"]
             }
         }
     },

@@ -29,7 +29,7 @@ export default function SignInPage() {
             alignItems="center"
             background="surface"
             border="neutral-medium"
-            borderStyle="solid-1"
+            borderStyle="solid"
             maxWidth={480}
           >
             <Text

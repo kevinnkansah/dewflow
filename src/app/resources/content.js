@@ -8,8 +8,8 @@ const person = {
     },
     role:      'Design Engineer',
     avatar:    '/images/avatar.jpg',
-    location:  'Africa/Johannesburg',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-    languages: ['English', 'Bahasa']  // optional: Leave the array empty if you don't want to display languages
+    location:  'Africa/Johannesburg',
+    languages: ['English', 'Bahasa']
 }
 
 const newsletter = {
@@ -19,8 +19,6 @@ const newsletter = {
 }
 
 const social = [
-    // Links are automatically displayed.
-    // Import new icons in /once-ui/icons.ts
     {
         name: 'GitHub',
         icon: 'github',
@@ -48,7 +46,38 @@ const home = {
     title: `${person.name}'s Portfolio`,
     description: `Portfolio website showcasing my work as a ${person.role}`,
     headline: <>Design engineer and builder</>,
-    subline: <>I'm Selene, a design engineer at <InlineCode>FLY</InlineCode>, where I craft intuitive<br/> user experiences. After hours, I build my own projects.</>
+    subline: <>I'm Selene, a design engineer at <InlineCode>FLY</InlineCode>, where I craft intuitive<br/> user experiences. After hours, I build my own projects.</>,
+    hero: {
+        title: 'Affordable Analytics for South African SMEs',
+        description: 'Make data-driven decisions without the enterprise price tag. Built for SMEs like yours.',
+        getStarted: 'Get Started Free',
+        bookDemo: 'Book a Demo'
+    },
+    benefits: {
+        title: 'Why Choose Our Platform?',
+        salesForecasting: {
+            title: 'Sales Forecasting',
+            description: 'Predict your future sales with AI-powered accuracy. Make inventory decisions with confidence.'
+        },
+        customerInsights: {
+            title: 'Customer Insights',
+            description: 'Understand your customers better. Segment and target your market effectively.'
+        },
+        financialTracking: {
+            title: 'Financial Tracking',
+            description: 'Monitor your cash flow and expenses in real-time. Stay on top of your finances.'
+        }
+    },
+    testimonials: {
+        title: 'Trusted by Growing Businesses',
+        quote: 'This tool helped us reduce costs by 20% and make better inventory decisions. It\'s exactly what our business needed.',
+        author: 'Sarah Johnson',
+        role: 'CEO, Cape Town Retail Solutions'
+    },
+    cta: {
+        title: 'Ready to Transform Your Business?',
+        description: 'Join hundreds of South African SMEs making smarter decisions with data.'
+    }
 }
 
 const about = {
@@ -72,7 +101,7 @@ const about = {
         description: <>Selene is a Jakarta-based design engineer with a passion for transforming complex challenges into simple, elegant design solutions. Her work spans digital interfaces, interactive experiences, and the convergence of design and technology.</>
     },
     work: {
-        display: true, // set to false to hide this section
+        display: true,
         title: 'Work Experience',
         experiences: [
             {
@@ -83,7 +112,7 @@ const about = {
                     <>Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user engagement and 30% faster load times.</>,
                     <>Spearheaded the integration of AI tools into design workflows, enabling designers to iterate 50% faster.</>
                 ],
-                images: [ // optional: leave the array empty if you don't want to display images
+                images: [
                     {
                         src: '/images/projects/project-01/cover-01.jpg',
                         alt: 'Project',
@@ -105,7 +134,7 @@ const about = {
         ]
     },
     studies: {
-        display: true, // set to false to hide this section
+        display: true,
         title: 'Studies',
         institutions: [
             {
@@ -119,7 +148,7 @@ const about = {
         ]
     },
     technical: {
-        display: true, // set to false to hide this section
+        display: true,
         title: 'Technical skills',
         skills: [
             {
@@ -160,23 +189,18 @@ const blog = {
     label: 'Blog',
     title: 'Writing about design and tech...',
     description: `Read what ${person.name} has been up to recently`
-    // Create new blog posts by adding a new .mdx file to app/blog/posts
-    // All posts will be listed on the /blog route
 }
 
 const work = {
     label: 'Work',
     title: 'My projects',
     description: `Design and dev projects by ${person.name}`
-    // Create new project pages by adding a new .mdx file to app/blog/posts
-    // All projects will be listed on the /home and /work routes
 }
 
 const gallery = {
     label: 'Gallery',
     title: 'My photo gallery',
     description: `A photo collection by ${person.name}`,
-    // Images from https://pexels.com
     images: [
         { 
             src: '/images/gallery/img-01.jpg', 

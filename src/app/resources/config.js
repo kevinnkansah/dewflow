@@ -27,22 +27,22 @@ const protectedRoutes = {
 }
 
 const effects = {
-    mask: 'cursor',             // none | cursor | topLeft | topRight | bottomLeft | bottomRight
+    mask: 'topLeft',             // none | cursor | topLeft | topRight | bottomLeft | bottomRight
     gradient: {
-        display: false,
-        opacity: 0.7            // 0 - 1
+        display: true,
+        opacity: 0.8            // 0 - 1
     },
     dots: {
-        display: false,
-        opacity: 0.5,           // 0 - 1
-        size: '20'              // 2 | 4 | 8 | 12 | 16 | 20 | 24 | 32 | 40 | 48 | 56 | 64
+        display: true,
+        opacity: 1,           // 0 - 1
+        size: '64'              // 2 | 4 | 8 | 12 | 16 | 20 | 24 | 32 | 40 | 48 | 56 | 64
     },
     grid: {
-        display: true,
-        opacity: 1,             // 0 - 1
-        width: "0.25rem",
-        height: "0.25rem",
-        color: "neutral-alpha-medium"
+      color: 'neutral-alpha-medium',
+      display: true,
+      height: 'var(--static-space-32)',
+      opacity: 100,
+      width: 'var(--static-space-32)'
     },
     lines: {
         display: false,
@@ -52,12 +52,12 @@ const effects = {
 const style = {
     theme: "dark", // dark | light
     neutral: "gray", // sand | gray | slate
-    brand: "cyan", // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
-    accent: "cyan", // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
-    solid: "contrast", // color | contrast | inverse
-    solidStyle: "flat", // flat | plastic
+    brand: "emerald", // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
+    accent: "green", // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
+    solid: "color", // color | contrast | inverse
+    solidStyle: "plastic", // flat | plastic
     border: "playful", // rounded | playful | conservative
-    surface: "translucent", // filled | translucent
+    surface: "filled", // filled | translucent
     transition: "all", // all | micro | macro
     scaling: "110", // 90 | 95 | 100 | 105 | 110
   }
@@ -72,14 +72,14 @@ const mailchimp = {
     effects: {
         mask: 'topRight',           // none | cursor | topLeft | topRight | bottomLeft | bottomRight
         gradient: {
-            display: true,
+            display: false,
             opacity: 0.6            // 0 - 1
         },
         dots: {
-            display: false,
+            display: true,
         },
         lines: {
-            display: false,
+            display: true,
         },
     }
 }

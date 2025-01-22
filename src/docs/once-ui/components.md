@@ -1,6 +1,6 @@
 # once-ui Components
 
-A comprehensive guide to the components available in once-ui.
+A comprehensive guide to the components available in Once UI. This guide covers layout, interactive, display, navigation, and special effects components, providing examples and best practices for their use.
 
 ## Layout Components
 

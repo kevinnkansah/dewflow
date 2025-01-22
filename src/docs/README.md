@@ -1,6 +1,6 @@
 # Project Documentation
 
-Welcome to the project documentation! This documentation will help you understand the structure, conventions, and best practices for developing and maintaining this application.
+Welcome to the project documentation! This comprehensive guide will help you understand the structure, conventions, and best practices for developing and maintaining this application. It covers everything from architecture and component guidelines to internationalization and deployment strategies.
 
 ## Table of Contents
 
@@ -12,7 +12,7 @@ Welcome to the project documentation! This documentation will help you understan
 2. [Architecture](./architecture/README.md)
    - App Router Overview
    - Internationalization
-   - UI Components Library (once-ui)
+   - UI Components Library (Once UI)
    - State Management
 
 3. [Development Guide](./development/README.md)
@@ -20,7 +20,7 @@ Welcome to the project documentation! This documentation will help you understan
    - Adding New Pages
    - Working with Components
    - Styling Guidelines
-   - Type Safety
+   - Type Safety and Best Practices
 
 4. [Internationalization](./i18n/README.md)
    - Translation Structure
@@ -30,25 +30,25 @@ Welcome to the project documentation! This documentation will help you understan
 5. [Components](./components/README.md)
    - Component Library Overview
    - Creating New Components
-   - Component Best Practices
+   - Component Best Practices and Patterns
 
 6. [Testing](./testing/README.md)
    - Testing Strategy
    - Writing Tests
-   - Test Coverage
+   - Test Coverage and Tools
 
 7. [Deployment](./deployment/README.md)
    - Build Process
    - Environment Configuration
-   - CI/CD Pipeline
+   - CI/CD Pipeline and Automation
 
 ## Quick Start
 
 For immediate development needs, refer to these key sections:
 - [Adding New Pages](./development/adding-pages.md)
 - [Working with Translations](./i18n/translations.md)
-- [Component Guidelines](./components/guidelines.md)
+- [Component Guidelines and Patterns](./components/guidelines.md)
 
 ## Contributing
 
-Please read our [Contributing Guidelines](./contributing.md) before making any changes to the project.
+Please read our [Contributing Guidelines](./contributing.md) before making any changes to the project. Your contributions are valuable and help us maintain a high standard of quality and consistency.
