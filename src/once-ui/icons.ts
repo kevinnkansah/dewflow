@@ -19,7 +19,15 @@ import {
 	HiMiniGlobeAsiaAustralia,
 	HiOutlineEnvelope,
 	HiCalendarDays,
-	HiEnvelope
+	HiEnvelope,
+	HiOutlinePhone,
+	HiOutlineCreditCard,
+	HiOutlineShoppingBag,
+	HiOutlineChartBar,
+	HiOutlineSquares2X2,
+	HiOutlineUserGroup,
+	HiOutlineCog,
+	HiOutlineBell
 } from "react-icons/hi2";
 
 import {
@@ -27,7 +35,13 @@ import {
 	PiUserCircleDuotone,
 	PiGridFourDuotone,
 	PiBookBookmarkDuotone,
-	PiImageDuotone
+	PiImageDuotone,
+	PiShoppingCartDuotone,
+	PiChartLineUpDuotone,
+	PiSquaresFourDuotone,
+	PiUsersDuotone,
+	PiGearDuotone,
+	PiBellDuotone
 } from "react-icons/pi";
 
 import {
@@ -41,21 +55,34 @@ import {
 import {LiaPaperPlane} from "react-icons/lia";
 
 export const iconLibrary: Record<string, IconType> = {
+	// Navigation
 	chevronUp: HiChevronUp,
     chevronDown: HiChevronDown,
 	chevronRight: HiChevronRight,
 	chevronLeft: HiChevronLeft,
 	refresh: HiOutlineArrowPath,
 	arrowUpRight: HiArrowUpRight,
+	
+	// Status
 	check: HiCheck,
 	helpCircle: HiMiniQuestionMarkCircle,
 	infoCircle: HiInformationCircle,
 	warningTriangle: HiExclamationTriangle,
 	errorCircle: HiExclamationCircle,
 	checkCircle: HiCheckCircle,
+	
+	// Contact & Social
 	email: HiEnvelope,
-	contact : HiOutlineEnvelope,
-	about : HiOutlineInformationCircle,
+	contact: HiOutlineEnvelope,
+	phone: HiOutlinePhone,
+	discord: FaDiscord,
+	github: FaGithub,
+	linkedin: FaLinkedin,
+	x: FaXTwitter,
+	google: FaGoogle,
+	
+	// General UI
+	about: HiOutlineInformationCircle,
 	globe: HiMiniGlobeAsiaAustralia,
 	person: PiUserCircleDuotone,
 	grid: PiGridFourDuotone,
@@ -65,9 +92,22 @@ export const iconLibrary: Record<string, IconType> = {
 	calendar: HiCalendarDays,
 	home: PiHouseDuotone,
 	gallery: PiImageDuotone,
-	discord: FaDiscord,
-	github: FaGithub,
-	linkedin: FaLinkedin,
-	x: FaXTwitter,
-	google: FaGoogle
+	send: LiaPaperPlane,
+	
+	// Business & Commerce
+	cart: PiShoppingCartDuotone,
+	bag: HiOutlineShoppingBag,
+	payment: HiOutlineCreditCard,
+	analytics: PiChartLineUpDuotone,
+	chart: HiOutlineChartBar,
+	dashboard: PiSquaresFourDuotone,
+	squares: HiOutlineSquares2X2,
+	
+	// Settings & Users
+	users: PiUsersDuotone,
+	team: HiOutlineUserGroup,
+	settings: PiGearDuotone,
+	cog: HiOutlineCog,
+	notifications: PiBellDuotone,
+	bell: HiOutlineBell
 };

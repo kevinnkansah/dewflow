@@ -1,30 +1,26 @@
 import React from 'react';
-import { Badge, Icon, Text, Heading, Flex, Button, Arrow } from '@/once-ui/components';
+import { Badge, Text, Heading, Flex, Button, Arrow } from '@/once-ui/components';
 
 const features = [
   {
-    icon: 'HiOutlineSquares2X2',
     title: 'Pay supplier invoices',
     description: 'Our goal is to streamline SMB trade, making it easier and faster than ever.',
     color: 'info',
     className: 'lg:col-span-2 aspect-square lg:aspect-auto hover:scale-[1.02] transition-transform duration-300'
   },
   {
-    icon: 'HiOutlineShoppingCart',
     title: 'Manage inventory',
     description: 'Our goal is to streamline SMB trade, making it easier and faster than ever.',
     color: 'success',
     className: 'aspect-square hover:scale-[1.02] transition-transform duration-300'
   },
   {
-    icon: 'HiOutlineChartBar',
     title: 'Track analytics',
     description: 'Our goal is to streamline SMB trade, making it easier and faster than ever.',
     color: 'warning',
     className: 'aspect-square hover:scale-[1.02] transition-transform duration-300'
   },
   {
-    icon: 'HiOutlineCreditCard',
     title: 'Process payments',
     description: 'Our goal is to streamline SMB trade, making it easier and faster than ever.',
     color: 'error',
@@ -38,22 +34,13 @@ function Feature() {
       <div className="container mx-auto">
         <div className="flex flex-col gap-10">
           <div className="flex gap-4 flex-col items-start">
-            <div>
-              <Badge 
-                title="Platform"
-                background="brand-weak"
-                border="brand-medium"
-                effect={false}
-              />
-            </div>
             <div className="flex gap-2 flex-col">
               <Heading 
-                as="h2"
-                size="xl"
+                variant="display-medium-m"
                 className="max-w-xl"
                 wrap="balance"
               >
-                Something new!
+                Streamline your business operations
               </Heading>
               <Text 
                 variant="body-default-l"
@@ -69,17 +56,14 @@ function Feature() {
               <Flex
                 key={index}
                 direction="column"
-                gap="24"
-                padding="24"
+                padding="32"
                 radius="m"
                 border="neutral-medium"
                 background={`${feature.color}-weak`}
-                className={feature.className}
-                justify="between"
+                className={`${feature.className} relative min-h-[280px]`}
               >
-                <Icon name={feature.icon} size="xl" onBackground="neutral-strong" />
-                <div className="flex flex-col gap-4">
-                  <div className="flex flex-col gap-2">
+                <div className="flex flex-col gap-6">
+                  <div className="flex flex-col gap-3">
                     <Heading as="h3" size="l">{feature.title}</Heading>
                     <Text 
                       variant="body-default-m"
@@ -88,21 +72,21 @@ function Feature() {
                     >
                       {feature.description}
                     </Text>
+                    <Button
+                      id={`feature-${index}`}
+                      variant="secondary"
+                      size="s"
+                      href="#"
+                    >
+                      <Flex gap="8">
+                        Learn more
+                        <Arrow
+                          trigger={`#feature-${index}`}
+                          color="onBackground"
+                        />
+                      </Flex>
+                    </Button>
                   </div>
-                  <Button
-                    id={`feature-${index}`}
-                    variant="secondary"
-                    size="s"
-                    href="#"
-                  >
-                    <Flex gap="8">
-                      Learn more
-                      <Arrow
-                        trigger={`#feature-${index}`}
-                        color="onBackground"
-                      />
-                    </Flex>
-                  </Button>
                 </div>
               </Flex>
             ))}

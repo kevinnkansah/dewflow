@@ -1,21 +1,21 @@
 import React from 'react';
-import { Button, Badge, Flex, Icon } from '@/once-ui/components';
+import { Button, Badge, Flex, Icon, Heading } from '@/once-ui/components';
 
 const images = [
   {
     color: 'info',
     className: 'aspect-square hover:scale-[1.02] transition-transform duration-300',
-    icon: 'HiOutlineSquares2X2'
+    icon: 'dashboard'
   },
   {
     color: 'success',
     className: 'row-span-2 hover:scale-[1.02] transition-transform duration-300',
-    icon: 'HiOutlineChartBar'
+    icon: 'analytics'
   },
   {
     color: 'warning',
     className: 'aspect-square hover:scale-[1.02] transition-transform duration-300',
-    icon: 'HiOutlineShoppingCart'
+    icon: 'cart'
   }
 ];
 
@@ -34,9 +34,9 @@ function Hero() {
               />
             </div>
             <div className="flex gap-4 flex-col">
-              <h1 className="text-5xl md:text-7xl max-w-lg tracking-tighter text-left font-regular">
+              <Heading variant="display-medium-xl" className="text-left max-w-lg">
                 This is the start of something!
-              </h1>
+              </Heading>
               <p className="text-xl leading-relaxed tracking-tight text-muted-foreground max-w-md text-left">
                 Managing a small business today is already tough. Avoid further
                 complications by ditching outdated, tedious trade methods. Our
@@ -48,7 +48,7 @@ function Hero() {
               <Button 
                 variant="secondary" 
                 size="l"
-                prefixIcon="HiOutlinePhone"
+                prefixIcon="phone"
               >
                 Jump on a call
               </Button>
@@ -67,13 +67,14 @@ function Hero() {
                 key={index}
                 border="neutral-medium"
                 direction="row"
-                gap="24"
                 padding="24"
                 radius="m"
                 background={`${image.color}-strong`}
-                className={image.className}
+                className={`${image.className} relative`}
               >
-                <Icon name={image.icon} size="xl" onBackground="neutral-strong" />
+                <div className="absolute bottom-6 left-6">
+                  <Icon name={image.icon} size="xl" onBackground="neutral-strong" />
+                </div>
               </Flex>
             ))}
           </div>
