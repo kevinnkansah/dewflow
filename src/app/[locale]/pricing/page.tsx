@@ -1,16 +1,18 @@
-import { getTranslations } from 'next-intl/server';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { Flex, Text } from '@/once-ui/components';
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
+    setRequestLocale(locale);
     const t = await getTranslations();
 
     return {
-        title: t('Pricing.title'),
-        description: t('Pricing.description'),
+        title: t('pricing.title'),
+        description: t('pricing.description'),
     };
 }
 
 export default async function PricingPage() {
+    setRequestLocale('en'); // Replace 'en' with the appropriate locale
     const t = await getTranslations();
 
     return (

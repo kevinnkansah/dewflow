@@ -3,6 +3,7 @@ import MasonryGrid from "@/components/gallery/MasonryGrid";
 import { baseURL, renderContent } from "@/app/resources";
 import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
 import { useTranslations } from "next-intl";
+import { Gallery } from "@/app/resources/types";
 
 export async function generateMetadata(
 	{params: {locale}}: { params: { locale: string }}
@@ -39,7 +40,7 @@ export async function generateMetadata(
 	};
 }
 
-export default function Gallery(
+export default function GalleryPage(
 	{ params: {locale}}: { params: { locale: string }}
 ) {
 	unstable_setRequestLocale(locale);

@@ -1,4 +1,4 @@
-import { authMiddleware } from "@clerk/nextjs";
+import { clerkMiddleware } from "@clerk/nextjs/server";
 import createMiddleware from 'next-intl/middleware';
 
 const intlMiddleware = createMiddleware({
@@ -6,26 +6,8 @@ const intlMiddleware = createMiddleware({
     defaultLocale: 'en'
 });
 
-export default authMiddleware({
-    beforeAuth: (req) => {
-        return intlMiddleware(req);
-    },
-
-    // Public routes that don't require authentication
-    publicRoutes: [
-        '/',
-        '/about',
-        '/pricing',
-        '/contact',
-        '/sign-up(.*)',
-        '/sign-in(.*)',
-        '/:locale',
-        '/:locale/about',
-        '/:locale/pricing',
-        '/:locale/contact',
-        '/:locale/sign-up(.*)',
-        '/:locale/sign-in(.*)',
-    ],
+export default clerkMiddleware(async (auth, req) => {
+    return intlMiddleware(req);
 });
 
 export const config = {

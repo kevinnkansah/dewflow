@@ -49,7 +49,7 @@ export default function About(
         <Flex
             fillWidth maxWidth="m"
             direction="column">
-            {/* Content cleared */}
+            {/* Content cleared  add content here Windsurf*/}
         </Flex>
     );
 }

@@ -120,8 +120,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
                         {avatars?.length > 0 && (
                             <AvatarGroup
                                 avatars={avatars}
-                                size="m"
-                                reverseOrder/>
+                                size="m"/>
                         )}
                         {description?.trim() && (
                             <Text

@@ -18,6 +18,7 @@ const routes = {
     '/gallery': true,
     '/sign-up': true,
     '/sign-in': true,
+    '/work': true,
 }
 
 // Enable password protection on selected routes

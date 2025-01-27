@@ -10,7 +10,7 @@
 	},
 	"dependencies": {
 		"@clerk/elements": "^0.22.5",
-		"@clerk/nextjs": "^6.9.6",
+		"@clerk/nextjs": "^6.10.3",
 		"@clerk/themes": "^2.2.3",
 		"@floating-ui/react-dom": "^2.1.1",
 		"@mdx-js/loader": "^3.1.0",
@@ -19,6 +19,8 @@
 		"@supabase/ssr": "^0.5.2",
 		"@supabase/supabase-js": "^2.47.10",
 		"classnames": "^2.5.1",
+		"clsx": "^2.1.1",
+		"compressorjs": "^1.2.1",
 		"cookie": "^1.0.1",
 		"framer-motion": "^11.15.0",
 		"gray-matter": "^4.0.3",
@@ -34,7 +36,8 @@
 		"remark": "^15.0.1",
 		"remark-html": "^16.0.1",
 		"sass": "^1.77.6",
-		"sharp": "^0.33.4"
+		"sharp": "^0.33.4",
+		"tailwind-merge": "^2.6.0"
 	},
 	"devDependencies": {
 		"@csstools/postcss-global-data": "^2.1.1",

@@ -19,6 +19,7 @@ import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 import { useTranslations } from 'next-intl';
 import { Hero } from '@/components/ui/hero-with-group-of-images-text-and-two-buttons';
 import { Feature } from '@/components/ui/feature-section-with-bento-grid';
+import { TiltedScrollSection } from '@/components/ui/tilted-scroll-section';
 
 export async function generateMetadata(
   {params: {locale}}: { params: { locale: string }}
@@ -59,6 +60,7 @@ export default function Home(
     <main className="flex min-h-screen flex-col items-center justify-between">
       <Hero />
       <Feature />
+      <TiltedScrollSection />
     </main>
   );
 }
