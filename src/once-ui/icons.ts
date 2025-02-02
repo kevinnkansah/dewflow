@@ -109,5 +109,12 @@ export const iconLibrary: Record<string, IconType> = {
 	settings: PiGearDuotone,
 	cog: HiOutlineCog,
 	notifications: PiBellDuotone,
-	bell: HiOutlineBell
+	bell: HiOutlineBell,
+	// Aliases for legacy icon names
+	arrowRight: HiChevronRight,
+	HiCheckCircle: HiCheckCircle,
+	PiShoppingCartDuotone: PiShoppingCartDuotone,
+	PiChartLineUpDuotone: PiChartLineUpDuotone,
+	PiGridFourDuotone: PiGridFourDuotone,
+	PiSquaresFourDuotone: PiSquaresFourDuotone
 };

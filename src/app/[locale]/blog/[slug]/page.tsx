@@ -14,14 +14,14 @@ interface BlogParams {
 }
 
 export async function generateStaticParams(): Promise<{ slug: string }[]> {
-  const posts = getPosts(["src", "app", "blog", "posts"]);
+  const posts = getPosts(["src", "app", "[locale]", "blog", "posts", "en"]);
   return posts.map((post) => ({
     slug: post.slug,
   }));
 }
 
 export function generateMetadata({ params: { slug } }: BlogParams) {
-  let post = getPosts(["src", "app", "blog", "posts"]).find((post) => post.slug === slug);
+  let post = getPosts(["src", "app", "[locale]", "blog", "posts", "en"]).find((post) => post.slug === slug);
 
   if (!post) {
     return;
@@ -62,7 +62,7 @@ export function generateMetadata({ params: { slug } }: BlogParams) {
 }
 
 export default function Blog({ params }: BlogParams) {
-  let post = getPosts(["src", "app", "blog", "posts"]).find((post) => post.slug === params.slug);
+  let post = getPosts(["src", "app", "[locale]", "blog", "posts", "en"]).find((post) => post.slug === params.slug);
 
   if (!post) {
     notFound();
@@ -74,7 +74,7 @@ export default function Blog({ params }: BlogParams) {
     })) || [];
 
   return (
-    <Column as="section" maxWidth="xs" gap="l">
+    <Column as="section" maxWidth="m" gap="l">
       <script
         type="application/ld+json"
         suppressHydrationWarning

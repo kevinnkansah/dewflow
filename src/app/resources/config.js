@@ -14,7 +14,7 @@ const routes = {
     '/about':   true,
     '/pricing': true,
     '/contact': true,
-    '/blog':    true,
+    '/blog':    false,
     '/gallery': true,
     '/sign-up': true,
     '/sign-in': true,
@@ -54,13 +54,13 @@ const style = {
     theme: "dark", // dark | light
     neutral: "gray", // sand | gray | slate
     brand: "emerald", // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
-    accent: "green", // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
+    accent: "moss", // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
     solid: "color", // color | contrast | inverse
     solidStyle: "plastic", // flat | plastic
     border: "playful", // rounded | playful | conservative
     surface: "filled", // filled | translucent
     transition: "all", // all | micro | macro
-    scaling: "110", // 90 | 95 | 100 | 105 | 110
+    scaling: "90", // 90 | 95 | 100 | 105 | 110
   }
 
 const display = {
@@ -71,9 +71,9 @@ const display = {
 const mailchimp = {
     action: 'https://url/subscribe/post?parameters',
     effects: {
-        mask: 'topRight',           // none | cursor | topLeft | topRight | bottomLeft | bottomRight
+        mask: 'none',           // none | cursor | topLeft | topRight | bottomLeft | bottomRight
         gradient: {
-            display: false,
+            display: true,
             opacity: 0.6            // 0 - 1
         },
         dots: {

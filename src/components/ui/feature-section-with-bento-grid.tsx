@@ -35,8 +35,8 @@ const features = [
 
 function Feature() {
   return (
-    <div className="w-full py-20 lg:py-32 bg-muted/30">
-      <div className="container mx-auto">
+    <div className="w-full py-20 lg:py-32">
+      <div className="container mx-auto max-w-5xl">
         <div className="flex flex-col gap-16">
           <div className="flex gap-6 flex-col items-start">
             <Badge 

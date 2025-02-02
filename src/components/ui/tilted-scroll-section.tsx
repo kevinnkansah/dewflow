@@ -16,8 +16,8 @@ const features = [
 
 export function TiltedScrollSection() {
   return (
-    <div className="w-full py-20 lg:py-40 bg-muted/50">
-      <div className="container mx-auto">
+    <div className="w-full py-20 lg:py-40">
+      <div className="container mx-auto max-w-5xl">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
           <div className="order-2 md:order-1">
             <TiltedScroll 
