@@ -61,17 +61,18 @@ export default function Home(
   return (
     <main className="flex min-h-screen flex-col items-center justify-between">
       <Hero />
-      <div className="hidden md:block w-full max-w-5xl mx-auto py-8">
+      {/* Show VelocityScroll only on desktop (lg and up) */}
+      <div className="hidden lg:block w-full max-w-5xl mx-auto py-8">
         <div className="max-w-5xl mx-auto px-4">
           <VelocityScroll 
             text="Welcome to Our Platform"
             default_velocity={5}
             className={cn(
-              "text-3xl md:text-5xl lg:text-6xl", // Responsive scaling
+              "text-3xl lg:text-5xl xl:text-6xl", // Adjust scaling for larger screens
               "font-bold text-center whitespace-nowrap text-white",
-              "overflow-x-hidden", // Prevent horizontal scroll
-              "px-2 md:px-4", // Responsive padding
-              "motion-reduce:animate-none" // Disable animation for reduced motion
+              "overflow-x-hidden",
+              "px-2 lg:px-4",
+              "motion-reduce:animate-none"
             )}
           />
         </div>
@@ -81,3 +82,4 @@ export default function Home(
     </main>
   );
 }
+

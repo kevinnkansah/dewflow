@@ -39,20 +39,13 @@ function Feature() {
       <div className="container mx-auto max-w-5xl">
         <div className="flex flex-col gap-16">
           <div className="flex gap-6 flex-col items-start">
-            <Badge 
-              title="Features"
-              background="brand-weak"
-              border="neutral-medium"
-              effect={false}
-            />
             <div className="flex gap-4 flex-col">
-              {/* @ts-ignore */}
               <Heading 
                 variant="display-medium-m"
                 className="max-w-xl"
                 wrap="balance"
               >
-                Everything you need to scale your business
+                Everything you need to build your business
               </Heading>
               <Text 
                 variant="body-default-l"

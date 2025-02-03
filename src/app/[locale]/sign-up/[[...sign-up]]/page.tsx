@@ -1,6 +1,5 @@
 'use client'
 
-import { Card } from "@nextui-org/react"
 import * as Clerk from '@clerk/elements/common'
 import * as SignUp from '@clerk/elements/sign-up'
 import { useTranslations } from 'next-intl'

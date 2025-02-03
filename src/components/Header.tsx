@@ -109,12 +109,14 @@ export const Header = () => {
                                 selected={isActive('')}>
                                 <Flex paddingX="2" hide="s">Home</Flex>
                             </ToggleButton>
-                            <ToggleButton
-                                prefixIcon="grid"
-                                href={`/${params?.locale}/pricing`}
-                                selected={isActive('pricing')}>
-                                <Flex paddingX="2" hide="s">Pricing</Flex>
-                            </ToggleButton>
+{ routes['/pricing'] && (
+    <ToggleButton
+        prefixIcon="grid"
+        href={`/${params?.locale}/pricing`}
+        selected={isActive('pricing')}>
+        <Flex paddingX="2" hide="s">Pricing</Flex>
+    </ToggleButton>
+)}
                             { routes['/about'] && (
                                 <ToggleButton
                                     prefixIcon="about"

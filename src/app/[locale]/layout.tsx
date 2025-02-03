@@ -89,7 +89,11 @@ export default async function RootLayout({
 	
 	return (
 		<NextIntlClientProvider messages={messages}>
-			<ClerkProvider>
+			<ClerkProvider
+				publishableKey={process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY}
+				signInFallbackRedirectUrl="/"
+				signUpFallbackRedirectUrl="/"
+			>
 				<Flex
 					as="html" 
 					lang="en"
