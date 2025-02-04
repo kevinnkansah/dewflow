@@ -76,13 +76,13 @@ export const Header = () => {
         <>
             <Flex
                 className={styles.mask}
-                position="fixed" zIndex={9}
+                position="fixed" zIndex={10}
                 fillWidth minHeight="80" justifyContent="center">
             </Flex>
             <Flex style={{height: 'fit-content'}}
                 className={styles.position}
                 as="header"
-                zIndex={9}
+                zIndex={10}
                 fillWidth padding="8"
                 justifyContent="center">
                 <Flex

@@ -20,7 +20,7 @@ const features = [
   {
     title: 'Inventory Control',
     description: 'Manage your stock levels and automate reordering with smart inventory management.',
-    color: 'warning',
+    color: 'success',
     icon: 'PiGridFourDuotone',
     className: 'aspect-square hover:scale-[1.02] transition-all duration-300'
   },
@@ -131,7 +131,7 @@ function Feature() {
                       colorEnd: "static-transparent",
                     }}
                   />
-                <div className="flex flex-col gap-6 h-full relative z-20">
+                <div className="flex flex-col gap-6 h-full relative z-0">
                   <div className="flex flex-col gap-4">
                     <div className={`p-3 rounded-lg bg-${feature.color}-strong/10 w-fit`}>
                       <Flex
@@ -148,7 +148,7 @@ function Feature() {
                       <Text 
                         variant="body-default-m"
                         onBackground="neutral-medium"
-                        className="max-w-xs"
+                        className="max-w-xs -z-10"
                       >
                         {feature.description}
                       </Text>
