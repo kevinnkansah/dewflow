@@ -22,6 +22,7 @@ import { VelocityScroll } from '@/components/ui/velocity-scroll';
 import { Feature } from '@/components/ui/feature-section-with-bento-grid';
 import { TiltedScrollSection } from '@/components/ui/tilted-scroll-section';
 import { cn } from '@/lib/utils';
+import CTA from "@/components/ui/cta";
 
 export async function generateMetadata(
   {params: {locale}}: { params: { locale: string }}
@@ -79,6 +80,11 @@ export default function Home(
       </div>
       <Feature />
       <TiltedScrollSection />
+      <CTA
+        title="Discover More"
+        description="Explore our platform with this stunning animated background"
+        className="my-8"
+      />
     </main>
   );
 }
