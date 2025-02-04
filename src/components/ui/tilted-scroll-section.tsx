@@ -1,4 +1,3 @@
-// @ts-nocheck
 import React from 'react';
 import { Heading, Text } from '@/once-ui/components';
 import { TiltedScroll } from "./tilted-scroll";
@@ -25,12 +24,8 @@ export function TiltedScrollSection() {
             />
           </div>
           <div className="order-1 md:order-2 flex flex-col gap-4 text-left">
-            <Heading
-              variant="display-medium-m"
-              className="max-w-xl"
-              wrap="balance"
-            >
-              Packed with Essential Features
+            <Heading as="h2" variant="display-default-m">
+                Everything you need
             </Heading>
             <Text 
               variant="body-default-l"

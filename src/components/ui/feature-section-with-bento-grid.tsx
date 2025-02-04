@@ -1,6 +1,6 @@
 // @ts-nocheck
 import React from 'react';
-import { Badge, Text, Heading, Flex, Button, Arrow, Icon } from '@/once-ui/components';
+import { Badge, Text, Heading, Flex, Button, Arrow, Icon, Background } from '@/once-ui/components';
 
 const features = [
   {
@@ -65,10 +65,73 @@ function Feature() {
                 padding="32"
                 radius="m"
                 border="neutral-medium"
-                background={`${feature.color}-weak`}
+                background={`${feature.color}-strong`}
                 className={`${feature.className} relative group`}
               >
-                <div className="flex flex-col gap-6 h-full">
+                  <Background
+                    mask={{
+                      x: 60,
+                      y: 0,
+                      radius: 100,
+                    }}
+                    position="absolute"
+                    gradient={{
+                      display: true,
+                      tilt: -35,
+                      height: 75,
+                      width: 150,
+                      x: 100,
+                      y: 40,
+                      colorStart: "accent-solid-medium",
+                      colorEnd: "static-transparent",
+                    }}
+                    dots={{
+                        display: true,
+                        size: "2",
+                        color: "accent-solid-medium",
+                        opacity: 50
+                    }}
+                  />
+                  <Background
+                    data-solid="color"
+                    mask={{
+                      x: 75,
+                      y: 0,
+                      radius: 100,
+                    }}
+                    position="absolute"
+                    gradient={{
+                      display: true,
+                      opacity: 100,
+                      tilt: -35,
+                      height: 50,
+                      width: 120,
+                      x: 80,
+                      y: 50,
+                      colorStart: index < 2 ? "alt-brand" : "brand-solid-strong",
+                      colorEnd: "static-transparent",
+                    }}
+                  />
+                  <Background
+                    mask={{
+                      x: 0,
+                      y: 100,
+                      radius: 100,
+                    }}
+                    position="absolute"
+                    gradient={{
+                      display: true,
+                      opacity: 100,
+                      tilt: -35,
+                      height: 50,
+                      width: 120,
+                      x: 25,
+                      y: 50,
+                      colorStart: index < 2 ? "alt-page" : "page-background",
+                      colorEnd: "static-transparent",
+                    }}
+                  />
+                <div className="flex flex-col gap-6 h-full relative z-20">
                   <div className="flex flex-col gap-4">
                     <div className={`p-3 rounded-lg bg-${feature.color}-strong/10 w-fit`}>
                       <Flex

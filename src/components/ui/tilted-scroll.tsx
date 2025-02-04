@@ -1,5 +1,8 @@
 import { cn } from "@/lib/utils"
 import React from "react"
+import { IoShieldCheckmark } from "react-icons/io5";
+
+
 
 interface TiltedScrollItem {
   id: string;
@@ -11,24 +14,6 @@ interface TiltedScrollProps {
   className?: string;
 }
 
-function CheckCircleIcon(props: React.SVGProps<SVGSVGElement>) {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      strokeWidth="1"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      {...props}
-    >
-      <path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" />
-      <path d="m9 12 2 2 4-4" />
-    </svg>
-  )
-}
 
 const defaultItems: TiltedScrollItem[] = [
   { id: "1", text: "Item 1" },
@@ -45,6 +30,7 @@ export function TiltedScroll({
   items = defaultItems,
   className 
 }: TiltedScrollProps) {
+  const CheckIcon = IoShieldCheckmark;
   return (
     <div className={cn("flex items-center justify-center", className)}>
       <div className="relative overflow-hidden [mask-composite:intersect] [mask-image:linear-gradient(to_right,transparent,black_5rem),linear-gradient(to_left,transparent,black_5rem),linear-gradient(to_bottom,transparent,black_5rem),linear-gradient(to_top,transparent,black_5rem)]">
@@ -54,10 +40,11 @@ export function TiltedScroll({
               key={item.id}
               className="group flex items-center gap-2 cursor-pointer rounded-md border border-border/40 bg-gradient-to-b from-background/80 to-muted/80 p-4 shadow-md transition-all duration-300 ease-in-out hover:scale-105 hover:-translate-x-1 hover:-translate-y-1 hover:shadow-xl dark:border-border"
             >
-              <CheckCircleIcon className="h-6 w-6 mr-2 stroke-foreground/40 transition-colors group-hover:stroke-foreground" />
+              <CheckIcon className="pl-2 w-4 h-4 text-teal-500" />
               <p className="text-foreground/80 transition-colors group-hover:text-foreground">
                 {item.text}
               </p>
+              
             </div>
           ))}
         </div>

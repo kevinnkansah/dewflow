@@ -11,7 +11,8 @@ import {
   Background,
   Row,
   Column,
-  LogoCloud
+  LogoCloud,
+  Flex
 } from '@/once-ui/components';
 import { Mailchimp } from '@/components';
 import { baseURL, routes, renderContent, newsletter } from '@/app/resources';
@@ -19,6 +20,7 @@ import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 import { useTranslations } from 'next-intl';
 import { Hero } from '@/components/ui/hero-with-group-of-images-text-and-two-buttons';
 import { VelocityScroll } from '@/components/ui/velocity-scroll';
+import { ResponsiveCTA } from '@/components/ui/responsive-cta';
 import { Feature } from '@/components/ui/feature-section-with-bento-grid';
 import { TiltedScrollSection } from '@/components/ui/tilted-scroll-section';
 import { cn } from '@/lib/utils';
@@ -66,7 +68,7 @@ export default function Home(
       <div className="hidden lg:block w-full max-w-5xl mx-auto py-8">
         <div className="max-w-5xl mx-auto px-4">
           <VelocityScroll 
-            text="Welcome to Our Platform"
+            text="AI Data Analytics Web Development Building Automation"
             default_velocity={5}
             className={cn(
               "text-3xl lg:text-5xl xl:text-6xl", // Adjust scaling for larger screens
@@ -79,14 +81,22 @@ export default function Home(
         </div>
       </div>
       <Feature />
+      <Flex
+      padding='32'
+      >
       <TiltedScrollSection />
+      </Flex>
+      
+      <RevealFx>
       <div className="w-full">
-        <CTA 
+        <ResponsiveCTA
           title="Get Started"
           buttonText="Book a Call"
           bookingUrl="https://cal.com/kevinnkansah/15min"
         />
       </div>
+      </RevealFx>
+      
     </main>
   );
 }

@@ -59,11 +59,8 @@ export function Hero() {
             gap="12"
             fillWidth
           >
-            <Heading 
-              variant="display-strong-xl" 
-              align="center"
-            >
-              This is the start of something!
+            <Heading wrap="balance" variant="display-default-l" align="center" marginBottom="16">
+              We let designers code and developers design
             </Heading>
             <Text 
               variant="body-default-l"

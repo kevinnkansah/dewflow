@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import AnimatedGradientBackground from "@/components/ui/animated-gradient-background";
 import { Button } from "@/once-ui/components/Button";
-import { Flex } from "@/once-ui/components";
+import { Flex, Heading } from "@/once-ui/components";
 
 interface CTAProps {
   title: string;
@@ -78,14 +78,9 @@ const CTA: React.FC<CTAProps> = ({
       {/* Content Container with responsive horizontal padding */}
       <div className="relative z-40 flex items-center justify-center h-screen text-center">
         <div className="w-full max-w-4xl mx-auto px-4 md:px-8">
-          <motion.h1
-            className="text-4xl font-bold text-white md:text-6xl"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-          >
-            {title}
-          </motion.h1>
+          <Heading align="center" as="h2" variant="display-default-l">
+             Get started
+          </Heading>
           
           {/* Once UI Button that opens Cal.com booking */}
           <div className="mt-8">
