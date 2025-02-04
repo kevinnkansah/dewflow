@@ -21,13 +21,13 @@ const CTA: React.FC<CTAProps> = ({
         startingGap={200}
         Breathing={true}
         gradientColors={[
-          "#001F1C", // Dark teal
-          "#003D38", // Medium dark teal
-          "#00635C", // Teal
-          "#00A89C", // Bright teal
-          "#00D9C9", // Light teal
-          "#00FFE9", // Bright aqua
-          "#00FFF0"  // Light cyan
+          "#0a0a0a",
+          "#0a1a1a", 
+          "#006060",
+          "#00b0b0", 
+          "#00d0d0", 
+          "#00d0d0", 
+          "#00FFE9"  
         ]}
         gradientStops={[0, 15, 30, 50, 70, 90, 100]}
         animationSpeed={0.02}
@@ -51,19 +51,19 @@ const CTA: React.FC<CTAProps> = ({
 
       {/* Top Fade Gradient */}
       <div 
-        className="absolute top-0 left-0 w-full h-64 bg-gradient-to-b from-black via-black/50 to-transparent opacity-80 z-30"
+        className="absolute top-0 left-0 w-full h-64 bg-gradient-to-b from-[#0a0a0a] via-[#0a0a0a]/80 to-transparent opacity-100 z-30"
         style={{
-          maskImage: "linear-gradient(to bottom, black, transparent)",
-          WebkitMaskImage: "linear-gradient(to bottom, black, transparent)"
+          maskImage: "linear-gradient(to bottom, #0a0a0a 30%, rgba(10,10,10,0.6) 50%, transparent)",
+          WebkitMaskImage: "linear-gradient(to bottom, #0a0a0a 30%, rgba(10,10,10,0.6) 50%, transparent)"
         }}
       />
       
       {/* Bottom Fade Gradient */}
       <div 
-        className="absolute bottom-0 left-0 w-full h-64 bg-gradient-to-t from-black via-black/50 to-transparent opacity-80 z-30"
+        className="absolute bottom-0 left-0 w-full h-64 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/80 to-transparent opacity-100 z-30"
         style={{
-          maskImage: "linear-gradient(to top, black, transparent)",
-          WebkitMaskImage: "linear-gradient(to top, black, transparent)"
+          maskImage: "linear-gradient(to top, #0a0a0a 30%, rgba(10,10,10,0.6) 50%, transparent)",
+          WebkitMaskImage: "linear-gradient(to top, #0a0a0a 30%, rgba(10,10,10,0.6) 50%, transparent)"
         }}
       />
       
