@@ -80,11 +80,13 @@ export default function Home(
       </div>
       <Feature />
       <TiltedScrollSection />
-      <CTA
-        title="Discover More"
-        description="Explore our platform with this stunning animated background"
-        className="my-8"
-      />
+      <div className="w-full">
+        <CTA 
+          title="Get Started"
+          buttonText="Book a Call"
+          bookingUrl="https://cal.com/kevinnkansah/15min"
+        />
+      </div>
     </main>
   );
 }
