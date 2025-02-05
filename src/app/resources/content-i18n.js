@@ -1,24 +1,7 @@
 import { InlineCode } from "@/once-ui/components";
 
 const createI18nContent = (t) => {
-    const person = {
-        firstName: 'Kevin',
-        lastName:  'Nkansah',
-        get name() {
-            return `${this.firstName} ${this.lastName}`;
-        },
-        role:      t("person.role"),
-        avatar:    '/images/avatar.jpg',
-        location:  'Cape Town/South Africa',
-        languages: ['English', 'Bahasa']
-    }
-
-    const newsletter = {
-        display: true,
-        title: <>{t("newsletter.title", {firstName: person.firstName})}</>,
-        description: <>{t("newsletter.description")}</>
-    }
-
+    
     const social = [
         {
             name: 'GitHub',
@@ -95,45 +78,11 @@ const createI18nContent = (t) => {
         description: t("blog.description")
     }
 
-    const work = {
-        label: t("work.label"),
-        title: t("work.title"),
-        description: t("work.description")
-    }
-
-    const gallery = {
-        label: t("gallery.label"),
-        title: t("gallery.title"),
-        description: t("gallery.description")
-    }
-
-    const pricing = {
-        title: t("pricing.title"),
-        description: t("pricing.description"),
-        plans: {
-            basic: {
-                name: t("pricing.plans.basic.name"),
-                price: t("pricing.plans.basic.price"),
-                features: t("pricing.plans.basic.features")
-            },
-            pro: {
-                name: t("pricing.plans.pro.name"),
-                price: t("pricing.plans.pro.price"),
-                features: t("pricing.plans.pro.features")
-            }
-        }
-    }
-
     return {
-        person,
-        newsletter,
         social,
         home,
         about,
         blog,
-        work,
-        gallery,
-        pricing
     }
 }
 

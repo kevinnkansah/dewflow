@@ -32,11 +32,6 @@ export function renderContent(t: any): ContentData {
             title: t('work.title'),
             description: t('work.description')
         },
-        newsletter: {
-            display: t('newsletter.display', true),
-            title: t('newsletter.title'),
-            description: t('newsletter.description')
-        }
-        // Add other content sections as needed
+
     };
 }

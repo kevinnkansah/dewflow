@@ -1,21 +1,10 @@
 import React from 'react';
 import { 
-  Heading, 
-  Text, 
-  Button, 
-  Card, 
-  Grid,
   RevealFx, 
-  Icon,
-  Badge,
-  Background,
-  Row,
-  Column,
-  LogoCloud,
+
   Flex
 } from '@/once-ui/components';
-import { Mailchimp } from '@/components';
-import { baseURL, routes, renderContent, newsletter } from '@/app/resources';
+import { baseURL, routes, renderContent } from '@/app/resources';
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 import { useTranslations } from 'next-intl';
 import { Hero } from '@/components/ui/hero-with-group-of-images-text-and-two-buttons';
@@ -24,7 +13,6 @@ import { ResponsiveCTA } from '@/components/ui/responsive-cta';
 import { Feature } from '@/components/ui/feature-section-with-bento-grid';
 import { TiltedScrollSection } from '@/components/ui/tilted-scroll-section';
 import { cn } from '@/lib/utils';
-import CTA from "@/components/ui/cta";
 
 export async function generateMetadata(
   {params: {locale}}: { params: { locale: string }}
@@ -59,7 +47,6 @@ export default function Home(
 ) {
   unstable_setRequestLocale(locale);
   const t = useTranslations('home');
-  const { home } = renderContent(t);
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between">
@@ -100,4 +87,3 @@ export default function Home(
     </main>
   );
 }
-

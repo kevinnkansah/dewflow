@@ -10,7 +10,6 @@ import { routes, display } from '@/app/resources'
 
 import { routing } from '@/i18n/routing';
 import { Locale, usePathname, useRouter } from '@/i18n/routing';
-import { renderContent } from "@/app/resources";
 import { useTranslations } from "next-intl";
 import { i18n } from "@/app/resources/config";
 import { Navigation } from './Navigation';
@@ -65,7 +64,6 @@ export const Header = () => {
     }
 
     const t = useTranslations();
-    const { person, home, about } = renderContent(t);
 
     const isActive = (path: string) => {
         const currentPath = pathname.split('/').pop() || '';
@@ -91,7 +89,7 @@ export const Header = () => {
                     textVariant="body-default-s">
                     { display.location && (
                         <Flex hide="s">
-                            {person.location}
+                            Replace with Logo
                         </Flex>
                     )}
                 </Flex>
@@ -158,11 +156,6 @@ export const Header = () => {
                                 ))}
                             </Flex>
                         }
-                        <Flex hide="s">
-                            { display.time && (
-                                <TimeDisplay timeZone={person.location}/>
-                            )}
-                        </Flex>
                     </Flex>
                 </Flex>
             </Flex>

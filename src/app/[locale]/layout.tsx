@@ -16,7 +16,6 @@ import { getMessages, getTranslations, unstable_setRequestLocale } from 'next-in
 import { ClerkProvider } from '@clerk/nextjs';
 
 import { routing } from "@/i18n/routing";
-import { renderContent } from "@/app/resources";
 import { Background, Column, Flex, ToastProvider } from "@/once-ui/components";
 import { SpacingToken } from "@/once-ui/types";
 
@@ -24,17 +23,16 @@ export async function generateMetadata(
 	{ params: { locale }}: { params: { locale: string }}
 ) {
 	const t = await getTranslations();
-	const { person, home } = renderContent(t);
 
 	return {
 		metadataBase: new URL(`https://${baseURL}/${locale}`),
-		title: home.title,
-		description: home.description,
+		title: 'Afenf',
+		description: 'efegeg',
 		openGraph: {
-			title: `${person.firstName}'s Portfolio`,
-			description: 'Portfolio website showcasing my work.',
+			title: 'Our Agency',
+			description: 'Leading agency providing top-notch services.',
 			url: baseURL,
-			siteName: `${person.firstName}'s Portfolio`,
+			siteName: 'Our Agency',
 			locale: 'en_US',
 			type: 'website',
 		},

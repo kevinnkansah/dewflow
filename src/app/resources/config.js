@@ -14,11 +14,10 @@ const routes = {
     '/about':   false,
     '/pricing': false,
     '/contact': true,
-    '/blog':    false,
+    '/blog':    true,
     '/gallery': true,
-    '/sign-up': true,
-    '/sign-in': true,
-    '/work': true,
+    '/sign-up': true,    '/sign-in': true,
+
 }
 
 // Enable password protection on selected routes
