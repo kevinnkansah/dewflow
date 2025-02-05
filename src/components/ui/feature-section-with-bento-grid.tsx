@@ -4,29 +4,29 @@ import { Badge, Text, Heading, Flex, Button, Arrow, Icon, Background } from '@/o
 
 const features = [
   {
-    title: 'Smart Payments',
-    description: 'Process payments securely and efficiently with our integrated payment solution.',
+    title: 'Website Creation',
+    description: "We design eye-catching websites that boost your brand and engage your audience.",
     color: 'info',
     icon: 'PiShoppingCartDuotone',
     className: 'lg:col-span-2 aspect-square lg:aspect-auto hover:scale-[1.02] transition-all duration-300'
   },
   {
-    title: 'Real-time Analytics',
-    description: 'Track your business performance with powerful analytics and insights.',
+    title: 'Analytics that generates profit',
+    description: 'We deliver clear, profit-focused analytics to help you grow and optimize your business.',
     color: 'success',
     icon: 'PiChartLineUpDuotone',
     className: 'aspect-square hover:scale-[1.02] transition-all duration-300'
   },
   {
-    title: 'Inventory Control',
-    description: 'Manage your stock levels and automate reordering with smart inventory management.',
+    title: 'AI Integration',
+    description: 'Our AI solutions leverage cutting-edge AI models and data intelligence to personalize customer experiences.',
     color: 'success',
     icon: 'PiGridFourDuotone',
     className: 'aspect-square hover:scale-[1.02] transition-all duration-300'
   },
   {
-    title: 'Business Dashboard',
-    description: 'Get a complete overview of your business with our intuitive dashboard.',
+    title: 'Product Demos',
+    description: 'We build rapid web app prototypes to test your demo concept before full-scale development.',
     color: 'brand',
     icon: 'PiSquaresFourDuotone',
     className: 'lg:col-span-2 aspect-square lg:aspect-auto hover:scale-[1.02] transition-all duration-300'
@@ -41,11 +41,10 @@ function Feature() {
           <div className="flex gap-6 flex-col items-start">
             <div className="flex gap-4 flex-col">
               <Heading 
-                variant="display-medium-m"
-                className="max-w-xl"
-                wrap="balance"
+                variant="display-default-m"
+                as="h2"
               >
-                Everything you need to build your business
+                Our Services
               </Heading>
               <Text 
                 variant="body-default-l"

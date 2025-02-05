@@ -3,14 +3,14 @@ import { Heading, Text } from '@/once-ui/components';
 import { TiltedScroll } from "./tilted-scroll";
 
 const features = [
-  { id: "1", text: "Instant Payment Processing" },
-  { id: "2", text: "Real-time Analytics" },
-  { id: "3", text: "Automated Inventory Management" },
-  { id: "4", text: "Supplier Integration" },
-  { id: "5", text: "Smart Invoicing" },
-  { id: "6", text: "Multi-currency Support" },
-  { id: "7", text: "24/7 Customer Support" },
-  { id: "8", text: "Mobile App Access" },
+  { id: "1", text: "Sleek Web Design" },
+  { id: "2", text: "Analytic Reports" },
+  { id: "3", text: "AI Chatbots" },
+  { id: "4", text: "Quick Delivery" },
+  { id: "5", text: "24/7 Support" },
+  { id: "6", text: "Mobile Responsive Website" },
+  { id: "7", text: "Latest AI Models"},
+  { id: "8", text: "Premium Design"} 
 ];
 
 export function TiltedScrollSection() {
@@ -32,7 +32,7 @@ export function TiltedScrollSection() {
               onBackground="neutral-medium"
               className="max-w-xl"
             >
-              Everything you need to run your business efficiently, all in one place. Our platform combines powerful features with an intuitive interface, making it easier than ever to manage your operations.
+              Experience seamless integration of AI, data insights, cutting-edge web solutions, and interactive demos—all in one place. Our agency delivers transformative results through intuitive design, powerful automation, and personalized support, ensuring you stay ahead in an ever-evolving digital landscape.
             </Text>
           </div>
         </div>
