@@ -4,7 +4,7 @@ export const runtime = 'edge';
 
 export async function GET(request: Request) {
     const font = fetch(
-        new URL('../../../public/fonts/Inter.ttf', import.meta.url)
+        new URL('../../../public/fonts/Aspekta.ttf', import.meta.url)
     ).then((res) => res.arrayBuffer());
     const fontData = await font;
 

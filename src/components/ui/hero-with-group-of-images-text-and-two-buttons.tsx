@@ -29,8 +29,6 @@ export function Hero() {
         fill 
         className="bg-gradient-to-br from-background via-background to-muted/50"
       />
-      
-      <RevealFx speed="medium">
         <Flex 
           direction="column" 
 
@@ -103,7 +101,6 @@ export function Hero() {
             </Text>
           </Flex>
         </Flex>
-      </RevealFx>
     </Flex>
   );
 }

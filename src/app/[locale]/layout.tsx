@@ -16,7 +16,7 @@ import { getMessages, getTranslations, unstable_setRequestLocale } from 'next-in
 import { ClerkProvider } from '@clerk/nextjs';
 
 import { routing } from "@/i18n/routing";
-import { Background, Column, Flex, ToastProvider } from "@/once-ui/components";
+import { Background, Column, Flex, RevealFx, ToastProvider } from "@/once-ui/components";
 import { SpacingToken } from "@/once-ui/types";
 
 export async function generateMetadata(
@@ -172,7 +172,10 @@ export default async function RootLayout({
 									minHeight="0"
 								>
 									<RouteGuard>
-										{children}
+										<RevealFx>
+											{children}
+										</RevealFx>
+										
 									</RouteGuard>
 								</Flex>
 							</Flex>

@@ -7,28 +7,28 @@ const features = [
     title: 'Website Creation',
     description: "We design eye-catching websites that boost your brand and engage your audience.",
     color: 'info',
-    icon: 'PiShoppingCartDuotone',
+    icon: 'datatable',
     className: 'lg:col-span-2 aspect-square lg:aspect-auto hover:scale-[1.02] transition-all duration-300'
   },
   {
     title: 'Analytics that generates profit',
     description: 'We deliver clear, profit-focused analytics to help you grow and optimize your business.',
     color: 'success',
-    icon: 'PiChartLineUpDuotone',
+    icon: 'dollar',
     className: 'aspect-square hover:scale-[1.02] transition-all duration-300'
   },
   {
     title: 'AI Integration',
     description: 'Our AI solutions leverage cutting-edge AI models and data intelligence to personalize customer experiences.',
     color: 'success',
-    icon: 'PiGridFourDuotone',
+    icon: 'pie',
     className: 'aspect-square hover:scale-[1.02] transition-all duration-300'
   },
   {
     title: 'Product Demos',
     description: 'We build rapid web app prototypes to test your demo concept before full-scale development.',
     color: 'brand',
-    icon: 'PiSquaresFourDuotone',
+    icon: 'stonks',
     className: 'lg:col-span-2 aspect-square lg:aspect-auto hover:scale-[1.02] transition-all duration-300'
   }
 ];
@@ -139,11 +139,14 @@ function Feature() {
                         justify="center"
                         className={`text-${feature.color}-strong`}
                       >
-                        <Icon name={feature.icon} size="l" />
+                        {feature.icon === 'datatable' && <img src="/feature-cards/datatable.svg" alt="datatable" className="w-24 h-24 object-contain" />}
+                        {feature.icon === 'dollar' && <img src="/feature-cards/dollar.svg" alt="dollar" className="w-24 h-24 object-contain" />}
+                        {feature.icon === 'pie' && <img src="/feature-cards/pie.svg" alt="pie" className="w-24 h-24 object-contain" />}
+                        {feature.icon === 'stonks' && <img src="/feature-cards/stonks.svg" alt="stonks" className="w-24 h-24 object-contain" />}
                       </Flex>
                     </div>
                     <div className="space-y-2">
-                      <Heading as="h3" size="l">{feature.title}</Heading>
+                      <Heading as="h3" size="xl" weight="bold">{feature.title}</Heading>
                       <Text 
                         variant="body-default-m"
                         onBackground="neutral-medium"
@@ -158,7 +161,7 @@ function Feature() {
                       id={`feature-${index}`}
                       variant="secondary"
                       size="s"
-                      href="#"
+                      href="/contact"
                       className="opacity-0 group-hover:opacity-100 transition-opacity"
                     >
                       <Flex gap="8">

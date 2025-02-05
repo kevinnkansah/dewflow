@@ -74,7 +74,6 @@ export default function Home(
       <TiltedScrollSection />
       </Flex>
       
-      <RevealFx>
       <div className="w-full">
         <ResponsiveCTA
           title="Get Started"
@@ -82,8 +81,6 @@ export default function Home(
           bookingUrl="https://cal.com/kevinnkansah/15min"
         />
       </div>
-      </RevealFx>
-      
     </main>
   );
 }
