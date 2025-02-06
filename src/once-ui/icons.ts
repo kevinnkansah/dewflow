@@ -27,7 +27,8 @@ import {
 	HiOutlineSquares2X2,
 	HiOutlineUserGroup,
 	HiOutlineCog,
-	HiOutlineBell
+	HiOutlineBell,
+	HiOutlineSparkles
 } from "react-icons/hi2";
 
 import {
@@ -110,6 +111,7 @@ export const iconLibrary: Record<string, IconType> = {
 	cog: HiOutlineCog,
 	notifications: PiBellDuotone,
 	bell: HiOutlineBell,
+	sparkles: HiOutlineSparkles,
 	// Aliases for legacy icon names
 	arrowRight: HiChevronRight,
 	HiCheckCircle: HiCheckCircle,

@@ -38,6 +38,11 @@ module.exports = {
           },
         },
       },
+      fontFamily: {
+        sans: ['var(--font-primary)'],
+        serif: ['var(--font-primary)'],
+        mono: ['var(--font-code)'],
+      }
     },
   },
   plugins: [],

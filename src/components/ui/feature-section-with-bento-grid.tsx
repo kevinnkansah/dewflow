@@ -11,7 +11,7 @@ const features = [
     className: 'lg:col-span-2 aspect-square lg:aspect-auto hover:scale-[1.02] transition-all duration-300'
   },
   {
-    title: 'Analytics that generates profit',
+    title: 'Analytics',
     description: 'We deliver clear, profit-focused analytics to help you grow and optimize your business.',
     color: 'success',
     icon: 'dollar',
@@ -47,7 +47,7 @@ function Feature() {
                 Our Services
               </Heading>
               <Text 
-                variant="body-default-l"
+                variant="body-default-m"
                 onBackground="neutral-medium"
                 className="max-w-xl lg:max-w-lg"
               >
@@ -146,9 +146,13 @@ function Feature() {
                       </Flex>
                     </div>
                     <div className="space-y-2">
-                      <Heading as="h3" size="xl" weight="bold">{feature.title}</Heading>
+                      <Heading as="h3">
+                      <Text variant='body-strong-m'>
+                        {feature.title}
+                        </Text>
+                        </Heading>
                       <Text 
-                        variant="body-default-m"
+                        variant="body-default-s"
                         onBackground="neutral-medium"
                         className="max-w-xs -z-10"
                       >

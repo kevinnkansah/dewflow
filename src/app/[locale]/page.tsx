@@ -4,7 +4,7 @@ import {
 
   Flex
 } from '@/once-ui/components';
-import { baseURL, routes, renderContent } from '@/app/resources';
+import { baseURL, renderContent } from '@/app/resources';
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 import { useTranslations } from 'next-intl';
 import { Hero } from '@/components/ui/hero-with-group-of-images-text-and-two-buttons';
@@ -58,8 +58,8 @@ export default function Home(
             text="AI Data Analytics Web Development Building Automation"
             default_velocity={5}
             className={cn(
-              "text-3xl lg:text-5xl xl:text-6xl", // Adjust scaling for larger screens
-              "font-bold text-center whitespace-nowrap text-white",
+              "text-3xl lg:text-5xl xl:text-6xl",
+              "text-center whitespace-nowrap text-white",
               "overflow-x-hidden",
               "px-2 lg:px-4",
               "motion-reduce:animate-none"
@@ -77,7 +77,7 @@ export default function Home(
       <div className="w-full">
         <ResponsiveCTA
           title="Get Started"
-          buttonText="Book a Call"
+          buttonText="Book a Free Call"
           bookingUrl="https://cal.com/kevinnkansah/15min"
         />
       </div>

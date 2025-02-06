@@ -1,8 +1,10 @@
 "use client";
 import React, { useState } from 'react';
 import { useRouter } from 'next/navigation';
-import { Button, Badge, Flex, Icon, Heading, Text, RevealFx } from '@/once-ui/components';
+import { Button, Badge, Flex, Icon, Heading, Text, RevealFx, Tag } from '@/once-ui/components';
 import { Label } from '@clerk/elements/common';
+
+
 
 
 export function Hero() {
@@ -43,12 +45,22 @@ export function Hero() {
             justifyContent="center"
           >
             <Badge 
-              title="We're live!"
-              background="info-strong"
+              background="info-weak"
               border="neutral-medium"
-              href="/contact"
+              icon="sparkles"
+              iconColor="text-primary-strong"
               effect
-            />
+              style={{
+                padding: '0.5rem 0.5rem',
+              }}
+            >
+              <Tag
+                variant="brand"
+                size="s"
+                label="Let's Create"
+              />
+            </Badge>
+            
           </Flex>
 
           {/* Text Content */}
@@ -58,10 +70,10 @@ export function Hero() {
             fillWidth
           >
             <Heading wrap="balance" variant="display-default-l" align="center" marginBottom="16">
-              We let designers code and developers design
+              AI, Web & Data Analytics
             </Heading>
             <Text 
-              variant="body-default-l"
+              variant="body-default-m"
               onBackground="neutral-medium"
               align="center"
             >
@@ -83,7 +95,11 @@ export function Hero() {
               size="l"
               prefixIcon="phone"
             >
-              Book a Call
+              <Text
+              variant='body-strong-l'>
+                Book a Free Call 
+              </Text>
+              
             </Button>
           </Flex>
 
@@ -97,7 +113,7 @@ export function Hero() {
           >
             <Icon name="HiCheckCircle" size="m" className="text-success-strong" />
             <Text variant="body-default-xs" onBackground="neutral-medium">
-              To celebrate, we are offering a 15% discount to our first 25 customers!
+              To celebrate our launch, we are offering a 15% discount to our first 25 customers!
             </Text>
           </Flex>
         </Flex>

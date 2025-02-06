@@ -43,7 +43,7 @@ export function UserNav() {
       src={getImageUrl(imageUrl, 160)}
       alt={`${user.fullName || user.username}'s avatar`}
       title={user.fullName || user.username || ''}
-      className="w-full h-full object-cover rounded-full"
+      style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '50%' }}
     />
   ) : null
 
