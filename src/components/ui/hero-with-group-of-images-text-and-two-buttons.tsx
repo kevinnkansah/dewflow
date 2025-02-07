@@ -1,8 +1,7 @@
 "use client";
 import React, { useState } from 'react';
 import { useRouter } from 'next/navigation';
-import { Button, Badge, Flex, Icon, Heading, Text, RevealFx, Tag } from '@/once-ui/components';
-import { Label } from '@clerk/elements/common';
+import { Button, Badge, Flex, Icon, Heading, Text, Tag } from '@/once-ui/components';
 
 
 
@@ -20,7 +19,7 @@ export function Hero() {
     <Flex 
       direction="column" 
   
-      paddingY="40"
+      paddingY="64"
       gap="32"
       fillWidth
       className="relative overflow-hidden"

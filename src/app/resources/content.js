@@ -1,15 +1,14 @@
 import { InlineCode } from "@/once-ui/components";
 
 const person = {
-    firstName: 'Kevin',
-    lastName:  'Nkansah',
+    firstName: 'Shulker',
+    lastName:  'Flow',
     get name() {
         return `${this.firstName} ${this.lastName}`;
     },
-    role:      'Design Engineer',
-    avatar:    '/images/avatar.jpg',
+    role:      'AI Consulting',
     location:  'Africa/Johannesburg',
-    languages: ['English', 'Bahasa']
+    languages: ['English']
 }
 
 const newsletter = {
@@ -20,31 +19,21 @@ const newsletter = {
 
 const social = [
     {
-        name: 'GitHub',
-        icon: 'github',
-        link: 'https://github.com/once-ui-system/nextjs-starter',
-    },
-    {
         name: 'LinkedIn',
         icon: 'linkedin',
-        link: 'https://www.linkedin.com/company/once-ui/',
-    },
-    {
-        name: 'X',
-        icon: 'x',
-        link: '',
+        link: 'https://www.linkedin.com/company/shulkerflow',
     },
     {
         name: 'Email',
         icon: 'email',
-        link: 'mailto:example@gmail.com',
+        link: 'mailto:8negus@gmail.com',
     },
 ]
 
 const home = {
     label: 'Home',
-    title: `${person.name}'s Portfolio`,
-    description: `Portfolio website showcasing my work as a ${person.role}`,
+    title: `${person.name}`,
+    description: `Analytics`,
     headline: <>Design engineer and builder</>,
     subline: <>I'm Selene, a design engineer at <InlineCode>FLY</InlineCode>, where I craft intuitive<br/> user experiences. After hours, I build my own projects.</>,
     hero: {

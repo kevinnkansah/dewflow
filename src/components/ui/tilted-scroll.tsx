@@ -24,6 +24,14 @@ const defaultItems: TiltedScrollItem[] = [
   { id: "6", text: "Item 6" },
   { id: "7", text: "Item 7" },
   { id: "8", text: "Item 8" },
+  { id: "9", text: "Item 1" },
+  { id: "10", text: "Item 2" },
+  { id: "11", text: "Item 3" },
+  { id: "12", text: "Item 4" },
+  { id: "13", text: "Item 5" },
+  { id: "14", text: "Item 6" },
+  { id: "15", text: "Item 7" },
+  { id: "16", text: "Item 8" }
 ]
 
 export function TiltedScroll({ 

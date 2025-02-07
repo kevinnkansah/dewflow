@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { renderContent } from "@/app/resources";
 import { Flex, IconButton, SmartLink, Text } from "@/once-ui/components"
 import { useTranslations } from "next-intl";
@@ -27,16 +28,16 @@ export const Footer = () => {
                         © {currentYear} /
                     </Text>
                     <Text paddingX="4">
-                        AGncy
+                        Shulker Flow
                     </Text>
-                    <Text onBackground="neutral-weak">
-                        {/* Usage of this template requires attribution. Please don't remove the link to Once UI. */}
+                    {/* <Text onBackground="neutral-weak">
+                        
                         / Build your future with <SmartLink style={{marginLeft: '-0.125rem'}} href="https://bettingtipstoday.net">Once UI</SmartLink>
-                    </Text>
+                    </Text> */}
                 </Text>
                 <Flex
                     gap="16">
-                    {social.map((item) => (
+                    {social.map((item: { name: string; link?: string; icon: React.ReactNode }) => (
                         item.link && (
                             <IconButton
                                 key={item.name}

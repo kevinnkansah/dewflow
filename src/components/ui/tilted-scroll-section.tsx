@@ -10,7 +10,15 @@ const features = [
   { id: "5", text: "24/7 Support" },
   { id: "6", text: "Mobile Responsive Website" },
   { id: "7", text: "Latest AI Models"},
-  { id: "8", text: "Premium Design"} 
+  { id: "8", text: "Premium Design"},
+  { id: "9", text: "Sleek Web Design" },
+  { id: "10", text: "Analytic Reports" },
+  { id: "11", text: "AI Chatbots" },
+  { id: "12", text: "Quick Delivery" },
+  { id: "13", text: "24/7 Support" },
+  { id: "14", text: "Mobile Responsive Website" },
+  { id: "15", text: "Latest AI Models"},
+  { id: "16", text: "Premium Design"} 
 ];
 
 export function TiltedScrollSection() {

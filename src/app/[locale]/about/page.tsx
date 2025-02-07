@@ -9,7 +9,7 @@ export async function generateMetadata(
     {params: {locale}}: { params: { locale: string }}
 ) {
     const t = await getTranslations();
-    const {person, about, social } = renderContent(t);
+    const { about, social } = renderContent(t);
 	const title = about.title;
 	const description = about.description;
 	const ogImage = `https://${baseURL}/og?title=${encodeURIComponent(title)}`;
@@ -43,7 +43,7 @@ export default function About(
 ) {
     unstable_setRequestLocale(locale);
     const t = useTranslations();
-    const {person, about, social } = renderContent(t);
+    const {about, social } = renderContent(t);
     
     return (
         <Flex

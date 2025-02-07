@@ -54,14 +54,20 @@ export interface Newsletter {
     description: string | JSX.Element;
 }
 
-export interface ContentData {
-    gallery: Gallery;
-    person: Person;
-    home: Home;
-    about: About;
-    social: SocialItem[];
-    blog: Blog;
-    work: Work;
-    newsletter: Newsletter;
-    // Add other content types as needed
-}
+export type ContentData = {
+    home: {
+        title: string;
+        description: string;
+    };
+    about: {
+        title: string;
+        description: string;
+    };
+    social: any;
+    blog: {
+        label: string;
+        title: string;
+        description: string;
+        posts: string;
+    };
+};

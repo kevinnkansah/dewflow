@@ -51,8 +51,8 @@ function Feature() {
                 onBackground="neutral-medium"
                 className="max-w-xl lg:max-w-lg"
               >
-                Our platform provides all the tools you need to manage and grow your business efficiently.
-                Start streamlining your operations today.
+                Our agency provides all the solutions you need to manage and grow your business efficiently.
+                
               </Text>
             </div>
           </div>
@@ -157,11 +157,9 @@ function Feature() {
                         className="max-w-xs -z-10"
                       >
                         {feature.description}
+                      
                       </Text>
-                    </div>
-                  </div>
-                  <div className="mt-auto">
-                    <Button
+                      <Button
                       id={`feature-${index}`}
                       variant="secondary"
                       size="s"
@@ -176,6 +174,7 @@ function Feature() {
                         />
                       </Flex>
                     </Button>
+                    </div>
                   </div>
                 </div>
               </Flex>

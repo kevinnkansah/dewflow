@@ -25,13 +25,13 @@ export async function generateMetadata(
 
 	return {
 		metadataBase: new URL(`https://${baseURL}/${locale}`),
-		title: 'Afenf',
-		description: 'efegeg',
+		title: 'Shulker Flow',
+		description: 'Affordable Analytics for South African SMEs - Make data-driven decisions without the enterprise price tag',
 		openGraph: {
-			title: 'Our Agency',
-			description: 'Leading agency providing top-notch services.',
+			title: 'Shulker Flow',
+			description: 'Affordable Analytics for South African SMEs - Make data-driven decisions without the enterprise price tag',
 			url: baseURL,
-			siteName: 'Our Agency',
+			siteName: 'Shulker Flow',
 			locale: 'en_US',
 			type: 'website',
 		},

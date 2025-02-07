@@ -16,7 +16,8 @@ const routes = {
     '/contact': true,
     '/blog':    true,
     '/gallery': true,
-    '/sign-up': true,    '/sign-in': true,
+    '/sign-up': true,    
+    '/sign-in': true,
 
 }
 
@@ -27,25 +28,25 @@ const protectedRoutes = {
 }
 
 const effects = {
-    mask: 'topLeft',             // none | cursor | topLeft | topRight | bottomLeft | bottomRight
+    mask: 'none',             // none | cursor | topLeft | topRight | bottomLeft | bottomRight
     gradient: {
         display: true,
-        opacity: 0.8            // 0 - 1
+        opacity: 1           // 0 - 1
     },
     dots: {
         display: true,
         opacity: 1,           // 0 - 1
-        size: '64'              // 2 | 4 | 8 | 12 | 16 | 20 | 24 | 32 | 40 | 48 | 56 | 64
+        size: '128'              // 2 | 4 | 8 | 12 | 16 | 20 | 24 | 32 | 40 | 48 | 56 | 64
     },
     grid: {
-      color: 'neutral-alpha-medium',
-      display: true,
-      height: 'var(--static-space-32)',
-      opacity: 100,
-      width: 'var(--static-space-32)'
+    color: 'info-alpha-weak',
+    display: true,
+    height: 'var(--static-space-64)',
+    opacity: 100,
+    width: 'var(--static-space-64)'
     },
     lines: {
-        display: false,
+        display: true,
     },
 }
 
@@ -59,8 +60,8 @@ const style = {
     border: "playful", // rounded | playful | conservative
     surface: "filled", // filled | translucent
     transition: "all", // all | micro | macro
-    scaling: "90", // 90 | 95 | 100 | 105 | 110
-  }
+    scaling: "100", // 90 | 95 | 100 | 105 | 110
+}
 
 const display = {
     location: true,
@@ -72,14 +73,14 @@ const mailchimp = {
     effects: {
         mask: 'none',           // none | cursor | topLeft | topRight | bottomLeft | bottomRight
         gradient: {
-            display: true,
-            opacity: 0.6            // 0 - 1
+        display: true,
+        opacity: 0.6            // 0 - 1
         },
         dots: {
-            display: true,
+        display: true,
         },
         lines: {
-            display: true,
+        display: true,
         },
     }
 }

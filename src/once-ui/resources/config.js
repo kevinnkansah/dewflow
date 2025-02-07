@@ -40,9 +40,7 @@ const schema = {
 
 // social links
 const social = {
-  twitter: "https://www.twitter.com/_onceui",
-  linkedin: "https://www.linkedin.com/company/once-ui/",
-  discord: "https://discord.com/invite/5EyAQ4eNdS",
+  linkedin: "https://www.linkedin.com/company/shulkerflow",
 };
 
 export { baseURL, style, meta, og, schema, social };
