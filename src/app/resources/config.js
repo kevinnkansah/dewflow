@@ -1,4 +1,4 @@
-const baseURL = 'dewflowai.vercel.app'
+const baseURL = 'https://dewflowai.vercel.app'
 
 // Enable localization
 const i18n = false;

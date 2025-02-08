@@ -37,10 +37,10 @@ export async function generateMetadata(
 			type: 'website',
 			images: [
 				{
-					url: `${baseURL}/DewFlow.png`,
+					url: `https://${baseURL}/og?title=${encodeURIComponent('Dew Flow AI')}`,
 					width: 1200,
 					height: 630,
-					alt: 'Dew Flow AI',
+					alt: 'Dew Flow AI OG Image',
 				},
 			],
 		},
@@ -48,7 +48,7 @@ export async function generateMetadata(
 				card: 'summary_large_image',
 				title: 'Dew Flow AI',
 				description: 'AI Automation & Analytics',
-				images: [`${baseURL}/DewFlow.png`],
+				images: [`https://${baseURL}/logo.svg`],
 			},
 		robots: {
 			index: true,

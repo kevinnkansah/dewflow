@@ -1,4 +1,4 @@
-const baseURL = 'dewflowai.vercel.app'
+const baseURL = 'https://dewflowai.vercel.app'
 
 // default customization applied to the HTML in the main layout.tsx
 const style = {
