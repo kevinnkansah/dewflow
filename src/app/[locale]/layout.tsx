@@ -29,18 +29,27 @@ export async function generateMetadata(
 		title: 'DewFlow AI | Data Analytics & Modern Web Solutions',
 		description: 'Leading AI automation and data analytics agency specializing in modern web development, business intelligence, and AI consulting for growing businesses.',
 		openGraph: {
-			title: 'DewFlow AI | Data Analytics & Modern Web Solutions',
-			description: 'Transform your business with AI-powered analytics and modern web solutions. Expert consulting in data intelligence, automation, and web development.',
+			title: 'Dew Flow AI',
+			description: 'AI Automation & Analytics',
 			url: baseURL,
-			siteName: 'DewFlow AI',
+			siteName: 'Dew Flow AI',
 			locale: 'en_US',
 			type: 'website',
+			images: [
+				{
+					url: `${baseURL}/DewFlow.png`,
+					width: 1200,
+					height: 630,
+					alt: 'Dew Flow AI',
+				},
+			],
 		},
-		twitter: {
-			card: 'summary_large_image',
-			title: 'DewFlow AI | Data Analytics & Modern Web Solutions',
-			description: 'Transform your business with AI-powered analytics and modern web solutions. Expert consulting in data intelligence, automation, and web development.',
-		},
+			twitter: {
+				card: 'summary_large_image',
+				title: 'Dew Flow AI',
+				description: 'AI Automation & Analytics',
+				images: [`${baseURL}/DewFlow.png`],
+			},
 		robots: {
 			index: true,
 			follow: true,
