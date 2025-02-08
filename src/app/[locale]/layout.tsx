@@ -25,15 +25,20 @@ export async function generateMetadata(
 
 	return {
 		metadataBase: new URL(`https://${baseURL}/${locale}`),
-		title: 'Shulker Flow',
-		description: 'Affordable Analytics for South African SMEs - Make data-driven decisions without the enterprise price tag',
+		title: 'DewFlow AI | Data Analytics & Modern Web Solutions',
+		description: 'Leading AI automation and data analytics agency specializing in modern web development, business intelligence, and AI consulting for growing businesses.',
 		openGraph: {
-			title: 'Shulker Flow',
-			description: 'Affordable Analytics for South African SMEs - Make data-driven decisions without the enterprise price tag',
+			title: 'DewFlow AI | Data Analytics & Modern Web Solutions',
+			description: 'Transform your business with AI-powered analytics and modern web solutions. Expert consulting in data intelligence, automation, and web development.',
 			url: baseURL,
-			siteName: 'Shulker Flow',
+			siteName: 'DewFlow AI',
 			locale: 'en_US',
 			type: 'website',
+		},
+		twitter: {
+			card: 'summary_large_image',
+			title: 'DewFlow AI | Data Analytics & Modern Web Solutions',
+			description: 'Transform your business with AI-powered analytics and modern web solutions. Expert consulting in data intelligence, automation, and web development.',
 		},
 		robots: {
 			index: true,
@@ -46,6 +51,7 @@ export async function generateMetadata(
 				'max-snippet': -1,
 			},
 		},
+		keywords: 'data analytics, AI automation, web development, business intelligence, AI consulting, modern websites, data visualization, SME solutions',
 	}
 };
 

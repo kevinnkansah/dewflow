@@ -1,8 +1,8 @@
 import { InlineCode } from "@/once-ui/components";
 
 const person = {
-    firstName: 'Shulker',
-    lastName:  'Flow',
+    firstName: 'Dew',
+    lastName:  'Flow AI',
     get name() {
         return `${this.firstName} ${this.lastName}`;
     },
@@ -21,7 +21,7 @@ const social = [
     {
         name: 'LinkedIn',
         icon: 'linkedin',
-        link: 'https://www.linkedin.com/company/shulkerflow',
+        link: 'https://www.linkedin.com/company/dewflow',
     },
     {
         name: 'Email',
@@ -33,7 +33,7 @@ const social = [
 const home = {
     label: 'Home',
     title: `${person.name}`,
-    description: `Analytics`,
+    description: `AI Automation & Analytics`,
     headline: <>Design engineer and builder</>,
     subline: <>I'm Selene, a design engineer at <InlineCode>FLY</InlineCode>, where I craft intuitive<br/> user experiences. After hours, I build my own projects.</>,
     hero: {

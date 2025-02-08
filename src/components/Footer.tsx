@@ -28,7 +28,7 @@ export const Footer = () => {
                         © {currentYear} /
                     </Text>
                     <Text paddingX="4">
-                        Shulker Flow
+                        DewFlow AI
                     </Text>
                     {/* <Text onBackground="neutral-weak">
                         

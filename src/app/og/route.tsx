@@ -17,28 +17,41 @@ export async function GET(request: Request) {
                     height: '100%',
                     padding: '8rem',
                     background: '#151515',
+                    flexDirection: 'column',
+                    gap: '2rem'
                 }}>
                 <div
                     style={{
                         display: 'flex',
                         flexDirection: 'column',
                         justifyContent: 'center',
-                        gap: '4rem',
+                        gap: '2rem',
                         fontFamily: 'Inter',
                         fontStyle: 'normal',
                         color: 'white',
                     }}>
-                     <div
-                         style={{
-                                fontSize: '8rem',
-                                lineHeight: '8rem',
-                                letterSpacing: '-0.05em',
-                                whiteSpace: 'pre-wrap',
-                                textWrap: 'balance',
-                         }}>
-                         AI & Web Design Agency
+                    <div
+                        style={{
+                            fontSize: '7rem',
+                            lineHeight: '7rem',
+                            letterSpacing: '-0.05em',
+                            whiteSpace: 'pre-wrap',
+                            textWrap: 'balance',
+                            background: 'linear-gradient(to right, #60A5FA, #34D399)',
+                            backgroundClip: 'text',
+                            color: 'transparent',
+                        }}>
+                        DewFlow AI
                     </div>
-                    
+                    <div
+                        style={{
+                            fontSize: '3.5rem',
+                            lineHeight: '4rem',
+                            color: '#94A3B8',
+                            letterSpacing: '-0.02em',
+                        }}>
+                        Data Analytics • AI Automation • Modern Web Solutions
+                    </div>
                 </div>
             </div>
         ),
@@ -51,7 +64,7 @@ export async function GET(request: Request) {
                     data: fontData,
                     style: 'normal',
                 },
-              ],
+            ],
         }
     )
 }
