@@ -1,4 +1,4 @@
-import { Button, Flex, Background, Column, Heading } from "@/once-ui/components";
+import { Button, Flex, Background, Column, Heading , Text} from "@/once-ui/components";
 
 import { motion } from 'framer-motion';
 

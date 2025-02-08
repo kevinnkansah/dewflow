@@ -47,6 +47,7 @@ export function Hero() {
               background="info-weak"
               border="neutral-medium"
               icon="sparkles"
+              arrow={false}
               iconColor="text-primary-strong"
               effect
               style={{
@@ -56,7 +57,7 @@ export function Hero() {
               <Tag
                 variant="brand"
                 size="s"
-                label="Let's Create"
+                label="AI Automation & Analytics Agency"
               />
             </Badge>
             
@@ -69,14 +70,14 @@ export function Hero() {
             fillWidth
           >
             <Heading wrap="balance" variant="display-default-l" align="center" marginBottom="16">
-              AI, Web & Data Analytics
+              We Speak Fluent Analytics.
             </Heading>
             <Text 
-              variant="body-default-m"
+              variant="body-default-l"
               onBackground="neutral-medium"
               align="center"
             >
-              Elevate your online presence with our expert web design and analytics services.
+              Overwhelmed by data? Let DewFlow simplify.
             </Text>
           </Flex>
 

@@ -18,7 +18,7 @@ export type StaticSpacingToken =
   | "128"
   | "160";
 
-export type TShirtSizes = "xs" | "s" | "m" | "l" | "xl";
+export type TShirtSizes = "xs" | "s" | "m" | "l" | "xl" ;
 
 export type ResponsiveSpacingToken = TShirtSizes;
 

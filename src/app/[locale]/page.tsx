@@ -1,7 +1,6 @@
 import React from 'react';
 import { 
   RevealFx, 
-
   Flex
 } from '@/once-ui/components';
 import { baseURL, renderContent } from '@/app/resources';
@@ -12,6 +11,7 @@ import { VelocityScroll } from '@/components/ui/velocity-scroll';
 import { ResponsiveCTA } from '@/components/ui/responsive-cta';
 import { Feature } from '@/components/ui/feature-section-with-bento-grid';
 import { TiltedScrollSection } from '@/components/ui/tilted-scroll-section';
+import { BrandName } from '@/components';
 import { cn } from '@/lib/utils';
 
 export async function generateMetadata(
@@ -81,6 +81,7 @@ export default function Home(
           bookingUrl="https://cal.com/kevinnkansah/15min"
         />
       </div>
+      <BrandName />
     </main>
   );
 }

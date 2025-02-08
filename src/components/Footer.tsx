@@ -30,10 +30,10 @@ export const Footer = () => {
                     <Text paddingX="4">
                         DewFlow AI
                     </Text>
-                    {/* <Text onBackground="neutral-weak">
+                    <Text onBackground="neutral-weak">
                         
-                        / Build your future with <SmartLink style={{marginLeft: '-0.125rem'}} href="https://bettingtipstoday.net">Once UI</SmartLink>
-                    </Text> */}
+                        / All rights reserved
+                    </Text>
                 </Text>
                 <Flex
                     gap="16">

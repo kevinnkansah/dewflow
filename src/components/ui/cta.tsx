@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import AnimatedGradientBackground from "@/components/ui/animated-gradient-background";
 import { Button } from "@/once-ui/components/Button";
-import { Flex, Heading } from "@/once-ui/components";
+import { Flex, Heading, Text } from "@/once-ui/components";
 
 interface CTAProps {
   title: string;
@@ -81,6 +81,17 @@ const CTA: React.FC<CTAProps> = ({
           <Heading align="center" as="h2" variant="display-default-l">
              Get started
           </Heading>
+          <Flex
+            justifyContent="center"
+            paddingTop="12">
+              <Text
+              variant="body-default-l"
+              onBackground="neutral-medium"
+              align="center"
+              >
+                Start your digital journey with DewFlow
+              </Text>
+            </Flex>
           
           {/* Once UI Button that opens Cal.com booking */}
           <div className="mt-8">
