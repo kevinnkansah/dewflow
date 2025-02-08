@@ -12,6 +12,7 @@ import { Inter, Plus_Jakarta_Sans, Source_Code_Pro } from 'next/font/google'
 
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations, unstable_setRequestLocale } from 'next-intl/server';
+import { dark, neobrutalism } from '@clerk/themes'
 import { ClerkProvider } from '@clerk/nextjs';
 
 import { routing } from "@/i18n/routing";
@@ -103,6 +104,8 @@ export default async function RootLayout({
 	return (
 		<NextIntlClientProvider messages={messages}>
 			<ClerkProvider
+				appearance={{
+					baseTheme: [dark]}}
 				publishableKey={process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY}
 				signInFallbackRedirectUrl="/"
 				signUpFallbackRedirectUrl="/"

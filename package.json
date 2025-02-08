@@ -12,7 +12,7 @@
 		"@calcom/embed-react": "^1.5.2",
 		"@clerk/elements": "^0.22.5",
 		"@clerk/nextjs": "^6.10.3",
-		"@clerk/themes": "^2.2.3",
+		"@clerk/themes": "^2.2.16",
 		"@floating-ui/react-dom": "^2.1.1",
 		"@mdx-js/loader": "^3.1.0",
 		"@next/mdx": "^14.2.16",
