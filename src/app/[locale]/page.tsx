@@ -78,7 +78,7 @@ export default function Home(
         <ResponsiveCTA
           title="Get Started"
           buttonText="Book a Free Call"
-          bookingUrl="https://cal.com/kevinnkansah/15min"
+          bookingUrl="https://cal.com/dewflow/15min"
         />
       </div>
       <BrandName />

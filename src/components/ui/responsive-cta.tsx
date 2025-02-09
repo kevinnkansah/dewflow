@@ -13,7 +13,7 @@ interface ResponsiveCTAProps {
 export const ResponsiveCTA: React.FC<ResponsiveCTAProps> = ({
   title,
   buttonText = "Book a Call",
-  bookingUrl = "https://cal.com/kevinnkansah/15min",
+  bookingUrl = "https://cal.com/dewflow/15min",
 }) => {
   const isMobile = useMediaQuery('(max-width: 1293px)');
 

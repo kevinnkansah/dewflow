@@ -11,7 +11,7 @@ interface MinimalCTAProps {
 export const MinimalCTA: React.FC<MinimalCTAProps> = ({
   title,
   buttonText = "Book a Call",
-  bookingUrl = "https://cal.com/kevinnkansah/15min",
+  bookingUrl = "https://cal.com/dewflow/15min",
 }) => {
   return (
     <Column

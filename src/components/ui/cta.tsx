@@ -17,7 +17,7 @@ const CTA: React.FC<CTAProps> = ({
   title,
 
   buttonText = "Book a Call",
-  bookingUrl = "https://cal.com/kevinnkansah/15min",
+  bookingUrl = "https://cal.com/dewflow/15min",
   className = "",
 }) => {
   return (
