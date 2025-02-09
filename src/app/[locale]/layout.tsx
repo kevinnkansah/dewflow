@@ -30,14 +30,14 @@ export async function generateMetadata(
 		description: 'Leading AI automation and data analytics agency specializing in modern web development, business intelligence, and AI consulting for growing businesses.',
 		openGraph: {
 			title: 'Dew Flow AI',
-			description: 'AI Automation & Analytics',
+			description: 'Web Development, AI Automation & Data Analytics',
 			url: baseURL,
 			siteName: 'Dew Flow AI',
 			locale: 'en_US',
 			type: 'website',
 			images: [
 				{
-					url: `https://${baseURL}/og?title=${encodeURIComponent('Dew Flow AI')}`,
+					url: `/DewFlow OG Image.png`,
 					width: 1200,
 					height: 630,
 					alt: 'Dew Flow AI OG Image',
@@ -48,7 +48,7 @@ export async function generateMetadata(
 				card: 'summary_large_image',
 				title: 'Dew Flow AI',
 				description: 'AI Automation & Analytics',
-				images: [`https://${baseURL}/logo.svg`],
+				images: [`/DewFlow OG Image.png`],
 			},
 		robots: {
 			index: true,

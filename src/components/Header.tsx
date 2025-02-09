@@ -14,38 +14,6 @@ import { useTranslations } from "next-intl";
 import { i18n } from "@/app/resources/config";
 import { Navigation } from './Navigation';
 
-type TimeDisplayProps = {
-    timeZone: string;
-    locale?: string;  // Optionally allow locale, defaulting to 'en-GB'
-};
-
-const TimeDisplay: React.FC<TimeDisplayProps> = ({ timeZone, locale = 'en-GB' }) => {
-    const [currentTime, setCurrentTime] = useState('');
-
-    useEffect(() => {
-        const updateTime = () => {
-            const now = new Date();
-            const options: Intl.DateTimeFormatOptions = {
-                timeZone,
-                hour: '2-digit',
-                minute: '2-digit',
-                hour12: false
-            };
-
-            setCurrentTime(new Intl.DateTimeFormat(locale, options).format(now));
-        };
-
-        // Update immediately and then every minute
-        updateTime();
-        const interval = setInterval(updateTime, 60000);
-
-        return () => clearInterval(interval);
-    }, [timeZone, locale]);
-
-    return <span>{currentTime}</span>;
-};
-
-export default TimeDisplay;
 
 export const Header = () => {
     const router = useRouter();
@@ -89,7 +57,7 @@ export const Header = () => {
                     textVariant="body-default-s">
                     { display.location && (
                         <Flex hide="s">
-                            <img src="/DewFlow.png" alt="DewFlow Logo" style={{ maxHeight: "40px" }} />
+                            <img src="/DewFlow Logo Web.png" alt="DewFlow Logo" style={{ maxHeight: "30px" }} />
                         </Flex>
                     )}
                 </Flex>
