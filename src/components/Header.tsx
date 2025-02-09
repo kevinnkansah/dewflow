@@ -97,6 +97,14 @@ export const Header = () => {
                                 selected={isActive('contact')}>
                                 <Flex paddingX="2" hide="s">Contact</Flex>
                             </ToggleButton>
+                            { routes['/blog'] && (
+                                <ToggleButton
+                                    prefixIcon="book"
+                                    href={`/${params?.locale}/blog`}
+                                    selected={isActive('blog')}>
+                                    <Flex paddingX="2" hide="s">Articles</Flex>
+                                </ToggleButton>
+                            )}
                             <Navigation />
                         </Flex>
                     </Flex>

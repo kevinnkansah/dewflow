@@ -11,7 +11,7 @@ export async function generateMetadata(
 	const t = await getTranslations();
 	const { blog } = renderContent(t);
 
-	const title = blog.title;
+	const title = "DewFlow AI | Blog";
 	const description = blog.description;
 	const ogImage = `https://${baseURL}/og?title=${encodeURIComponent(title)}`;
 
@@ -70,8 +70,8 @@ export default function Blog(
 			/>
             <Heading
                 marginBottom="l"
-                variant="display-strong-s">
-                {blog.title}
+                variant="display-default-s">
+                Design & Tech: Insights & Innovation
             </Heading>
 			<Flex
 				fillWidth flex={1} direction="column">
