@@ -11,8 +11,8 @@ export default function ContactPage() {
             const cal = await getCalApi({ namespace: '15min' });
             cal('ui', {
                 cssVarsPerTheme: {
-                    light: { 'cal-brand': '#6eccac' },
-                    dark: { 'cal-brand': '#6eccac' },
+                    light: { 'cal-brand': '#18bfc7' },
+                    dark: { 'cal-brand': '#18bfc7' },
                 },
                 hideEventTypeDetails: false,
                 layout: 'month_view',
@@ -30,7 +30,7 @@ export default function ContactPage() {
             </Text>
             <Cal
                 namespace="15min"
-                calLink="kevinnkansah/15min"
+                calLink="dewflow/15min"
                 style={{ width: '100%', height: '100%', overflow: 'scroll' }}
                 config={{ layout: 'week_view' }}
             />

@@ -48,7 +48,7 @@ export function VelocityScroll({
       stiffness: 400,
     });
 
-    const velocityFactor = useTransform(smoothVelocity, [0, 1000], [0, 5], {
+    const velocityFactor = useTransform(smoothVelocity, [0, 1000], [0, 2.5], {
       clamp: false,
     });
 
@@ -76,7 +76,7 @@ export function VelocityScroll({
 
     const directionFactor = React.useRef<number>(1);
     useAnimationFrame((t, delta) => {
-      let moveBy = directionFactor.current * baseVelocity * (delta / 1000);
+      let moveBy = directionFactor.current * baseVelocity * (delta / 1000) / 2;
 
       if (velocityFactor.get() < 0) {
         directionFactor.current = -1;
