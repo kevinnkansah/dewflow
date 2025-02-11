@@ -141,7 +141,14 @@ export default async function RootLayout({
 					)}
 				>
 					<ToastProvider>
-						<Column as="body" fillWidth margin="0" padding="0">
+						<Column 
+							as="body" 
+							fillWidth 
+							margin="0" 
+							padding="0" 
+							overflowX="hidden"
+							
+						>
 							<Background
 								position="absolute"
 								mask={effects.mask === 'cursor' ? {

@@ -32,9 +32,6 @@ export function Hero() {
       />
         <Flex 
           direction="column" 
-
-
-
           gap="24"
 
         >
@@ -44,21 +41,26 @@ export function Hero() {
             justifyContent="center"
           >
             <Badge 
-              background="info-weak"
+              background="info-medium"
               border="neutral-medium"
               icon="sparkles"
               arrow={false}
-              iconColor="text-primary-strong"
+              iconColor="brand-strong"
               effect
               style={{
-                padding: '0.5rem 0.5rem',
+                padding: '0.25rem 0.35rem',
+                transform: 'scale(0.95)'
               }}
             >
-              <Tag
-                variant="brand"
-                size="s"
-                label="AI Automation & Analytics Agency"
-              />
+              <Flex 
+              >
+                <Text 
+                  variant="body-default-xs"
+                  onBackground="accent-strong"
+                >
+                  AI Automation & Analytics Agency
+                </Text>
+              </Flex>
             </Badge>
             
           </Flex>
