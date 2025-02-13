@@ -1,7 +1,10 @@
 "use client";
 import React, { useState } from 'react';
+import { useMediaQuery } from '@react-hook/media-query';
 import { useRouter } from 'next/navigation';
 import { Button, Badge, Flex, Icon, Heading, Text, Tag } from '@/once-ui/components';
+import RotatingText from '@/components/ui/RotatingText'
+  
 
 
 
@@ -41,7 +44,7 @@ export function Hero() {
             justifyContent="center"
           >
             <Badge 
-              background="info-medium"
+              background="brand-weak"
               border="neutral-medium"
               icon="sparkles"
               arrow={false}
@@ -56,7 +59,7 @@ export function Hero() {
               >
                 <Text 
                   variant="body-default-xs"
-                  onBackground="accent-strong"
+                  onBackground="brand-medium"
                 >
                   AI Automation & Analytics Agency
                 </Text>
@@ -71,15 +74,47 @@ export function Hero() {
             gap="12"
             fillWidth
           >
-            <Heading wrap="balance" variant="display-default-l" align="center" marginBottom="16">
-              We Speak Fluent Analytics.
-            </Heading>
+            {useMediaQuery('(min-width: 640px)') ? (
+              // Desktop layout
+              <Heading wrap="balance" variant="display-default-l" align="center" marginBottom="16" className="flex flex-row items-center justify-start max-w-4xl mx-auto">
+                <span>We Speak Fluent</span>{' '}
+                <RotatingText
+                  texts={['Analytics.', 'Design', 'Automation']}
+                  mainClassName="inline-flex items-center justify-start w-[280px] ml-2"
+                  staggerFrom={"last"}
+                  initial={{ y: "100%" }}
+                  animate={{ y: 0 }}
+                  exit={{ y: "-120%" }}
+                  staggerDuration={0.015}
+                  splitLevelClassName="overflow-hidden pb-0.5 pb-1"
+                  transition={{ type: "spring", damping: 25, stiffness: 400 }}
+                  rotationInterval={3000}
+                />
+              </Heading>
+            ) : (
+              // Mobile layout
+              <Heading wrap="balance" variant="display-default-l" align="center" marginBottom="16" className="flex flex-col items-center justify-center gap-2">
+                <span>We Speak Fluent</span>
+                <RotatingText
+                  texts={['Analytics.', 'Design', 'Automation']}
+                  mainClassName="inline-flex items-center justify-center w-[220px]"
+                  staggerFrom={"last"}
+                  initial={{ y: "100%" }}
+                  animate={{ y: 0 }}
+                  exit={{ y: "-120%" }}
+                  staggerDuration={0.015}
+                  splitLevelClassName="overflow-hidden pb-0.5"
+                  transition={{ type: "spring", damping: 25, stiffness: 400 }}
+                  rotationInterval={3000}
+                />
+              </Heading>
+            )}
             <Text 
-              variant="body-default-l"
+              variant="body-default-m"
               onBackground="neutral-medium"
               align="center"
             >
-              Overwhelmed by data? Let DewFlow simplify.
+              Overwhelmed by data & devlopment? Let DewFlow simplify.
             </Text>
           </Flex>
 
