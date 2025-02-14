@@ -79,7 +79,7 @@ const CTA: React.FC<CTAProps> = ({
       <div className="relative z-40 flex items-center justify-center h-screen text-center">
         <div className="w-full max-w-4xl mx-auto px-4 md:px-8">
           <Heading align="center" as="h2" variant="display-default-l">
-             Get started
+             {title}
           </Heading>
           <Flex
             justifyContent="center"

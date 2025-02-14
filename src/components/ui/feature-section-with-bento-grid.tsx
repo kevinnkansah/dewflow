@@ -35,20 +35,22 @@ const features = [
 
 function Feature() {
   return (
-    <div className="w-full py-20 lg:py-32">
+    <div className="w-full py-32 lg:py-48">
       <div className="container mx-auto max-w-5xl">
         <div className="flex flex-col gap-16">
-          <div className="flex gap-6 flex-col items-start">
-            <div className="flex gap-4 flex-col">
+          <div className="flex gap-6 flex-col items-center text-center">
+            <div className="flex gap-4 flex-col items-center max-w-2xl mx-auto">
               <Heading 
                 variant="display-default-m"
                 as="h2"
+                align="center"
               >
                 Our Services
               </Heading>
               <Text 
                 variant="body-default-m"
                 onBackground="neutral-medium"
+                align="center"
                 className="max-w-xl lg:max-w-lg"
               >
                 Our agency provides all the solutions you need to manage and grow your business efficiently.
@@ -86,9 +88,9 @@ function Feature() {
                     }}
                     dots={{
                         display: true,
-                        size: "2",
-                        color: "accent-solid-medium",
-                        opacity: 50
+                        size: "4",
+                        color: "accent-solid-strong",
+                        opacity: 100
                     }}
                   />
                   <Background

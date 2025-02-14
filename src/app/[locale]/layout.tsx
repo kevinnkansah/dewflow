@@ -3,6 +3,8 @@ import "@/once-ui/styles/index.scss";
 import "@/once-ui/tokens/index.scss";
 
 import classNames from 'classnames';
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 import { Footer, Header, RouteGuard } from "@/components";
 import { baseURL, effects, style } from '@/app/resources'
@@ -11,7 +13,7 @@ import { Inter, Plus_Jakarta_Sans, Source_Code_Pro } from 'next/font/google'
 
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations, unstable_setRequestLocale } from 'next-intl/server';
-import { dark, neobrutalism } from '@clerk/themes'
+import { dark } from '@clerk/themes'
 import { ClerkProvider } from '@clerk/nextjs';
 
 import { routing } from "@/i18n/routing";
@@ -205,7 +207,7 @@ export default async function RootLayout({
 									minHeight="0"
 								>
 									<RouteGuard>
-										<RevealFx>
+										<RevealFx >
 											{children}
 										</RevealFx>
 										
@@ -213,6 +215,8 @@ export default async function RootLayout({
 								</Flex>
 							</Flex>
 							<Footer />
+							<Analytics />
+							<SpeedInsights />
 						</Column>
 					</ToastProvider>
 				</Flex>

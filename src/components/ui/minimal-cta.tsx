@@ -61,10 +61,13 @@ export const MinimalCTA: React.FC<MinimalCTAProps> = ({
         colorEnd: "brand-background-medium",
       }}
     />
-    <Column gap="48" fillWidth position="relative">
+    <Column gap="24" fillWidth position="relative">
       <Heading align="center" as="h2" variant="display-default-l">
-        Get started
+        {title}
       </Heading>
+      <Text align="center" variant="body-default-l">
+      Start your digital journey with DewFlow
+      </Text>
         <Flex
         justifyContent="center">
         <Button

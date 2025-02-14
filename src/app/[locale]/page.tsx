@@ -3,11 +3,13 @@ import {
   RevealFx, 
   Flex
 } from '@/once-ui/components';
+import Logos from '@/components/ui/logos';
 import { baseURL, renderContent } from '@/app/resources';
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 import { useTranslations } from 'next-intl';
 import { Hero } from '@/components/ui/hero-with-group-of-images-text-and-two-buttons';
 import { VelocityScroll } from '@/components/ui/velocity-scroll';
+
 import { ResponsiveCTA } from '@/components/ui/responsive-cta';
 import { Feature } from '@/components/ui/feature-section-with-bento-grid';
 import { TiltedScrollSection } from '@/components/ui/tilted-scroll-section';
@@ -56,7 +58,6 @@ export default function Home(
         <div className="max-w-5xl mx-auto px-4">
           <VelocityScroll 
             text="AI Data Analytics Web Development Building Automation"
-            default_velocity={5}
             className={cn(
               "text-3xl lg:text-5xl xl:text-6xl",
               "text-center whitespace-nowrap text-white",
@@ -73,6 +74,8 @@ export default function Home(
       >
       <TiltedScrollSection />
       </Flex>
+
+      <Logos />
       
       <div className="w-full">
         <ResponsiveCTA
