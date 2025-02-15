@@ -3,10 +3,13 @@ html, body, input, button, textarea, select {
   font-family: var(--font-primary);
 }
 
+body {
+  scroll-behavior: smooth;
+}
+
 /* Override any Tailwind font classes */
 .font-sans,
 .font-serif,
 .font-mono {
   font-family: var(--font-primary) !important;
 } 
-

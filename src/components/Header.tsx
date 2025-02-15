@@ -3,7 +3,7 @@
 import { useParams } from "next/navigation";
 import { useEffect, useState, useTransition } from "react";
 
-import { Flex, ToggleButton, Text, Heading, Logo} from "@/once-ui/components"
+import { Flex, ToggleButton, Text, Heading, Logo, SmartLink} from "@/once-ui/components"
 import styles from '@/components/Header.module.scss'
 
 import { routes, display } from '@/app/resources'
@@ -57,7 +57,9 @@ export const Header = () => {
                     textVariant="body-default-s">
                     { display.location && (
                         <Flex hide="s">
-                            <img src="/DewFlow Logo Web.png" alt="DewFlow Logo" style={{ maxHeight: "30px" }} />
+                            <SmartLink href="/">
+                                <img src="/DewFlow Logo Web.png" alt="DewFlow Logo" style={{ maxHeight: "30px" }} />
+                            </SmartLink>
                         </Flex>
                     )}
                 </Flex>
