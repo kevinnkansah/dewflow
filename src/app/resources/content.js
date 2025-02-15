@@ -26,7 +26,7 @@ const social = [
     {
         name: 'Email',
         icon: 'email',
-        link: 'mailto:8negus@gmail.com',
+        link: 'mailto:contact@dewflow.xyz',
     },
 ]
 

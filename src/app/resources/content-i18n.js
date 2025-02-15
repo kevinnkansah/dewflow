@@ -21,7 +21,7 @@ const createI18nContent = (t) => {
         {
             name: 'Email',
             icon: 'email',
-            link: 'mailto:example@gmail.com',
+            link: 'contact@dewflow.xyz',
         },
     ]
 
