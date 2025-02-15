@@ -32,8 +32,9 @@ const social = [
 
 const home = {
     label: 'Home',
-    title: `${person.name}`,
-    description: `AI Automation & Analytics`,
+    title: 'Dew Flow AI',
+    description: 'AI & Analytical solutions for South African businesses. Automate tasks, gain insights, and scale smarter. Book a free call today.',
+    ogImage: 'https://opengraph.b-cdn.net/production/images/3a3dd217-d8e8-4689-8a62-07c267729a13.png?token=uW741tQQ8lAlyFd5k-9pjp6POu_FINfRsrc9J-SisWA&height=591&width=1200&expires=33275654452',
     headline: <>Design engineer and builder</>,
     subline: <>At DewFlow AI, we blend innovative design and engineering to create intuitive<br/> user experiences that empower your business growth.</>,
     hero: {

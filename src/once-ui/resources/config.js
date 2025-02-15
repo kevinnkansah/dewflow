@@ -1,4 +1,4 @@
-const baseURL = 'https://dewflowai.xyz'
+const baseURL = 'https://www.dewflow.xyz'
 
 // default customization applied to the HTML in the main layout.tsx
 const style = {

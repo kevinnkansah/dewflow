@@ -1,4 +1,4 @@
-const baseURL = 'https://dewflowai.xyz'
+const baseURL = 'https://www.dewflow.xyz'
 
 // Enable localization
 const i18n = false;
