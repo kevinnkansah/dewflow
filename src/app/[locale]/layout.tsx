@@ -26,31 +26,33 @@ export async function generateMetadata(
 	const t = await getTranslations();
 
 	return {
-		metadataBase: new URL(`https://${baseURL}/${locale}`),
-		title: 'DewFlow AI | Data Analytics & Modern Web Solutions',
-		description: 'Leading AI automation and data analytics agency specializing in modern web development, business intelligence, and AI consulting for growing businesses.',
+		metadataBase: new URL('https://www.dewflow.xyz'),
+		title: 'Dew Flow AI',
+		description: 'AI & Analytical solutions for South African businesses. Automate tasks, gain insights, and scale smarter. Book a free call today.',
 		openGraph: {
-			title: 'Dew Flow AI',
-			description: 'Web Development, AI Automation & Data Analytics',
-			url: baseURL,
-			siteName: 'Dew Flow AI',
-			locale: 'en_US',
+			url: 'https://www.dewflow.xyz/',
 			type: 'website',
+			title: 'Dew Flow AI',
+			description: 'AI & Analytical solutions for South African businesses. Automate tasks, gain insights, and scale smarter. Book a free call today.',
 			images: [
 				{
-					url: `/DewFlow OG Image.png`,
+					url: 'https://opengraph.b-cdn.net/production/images/3a3dd217-d8e8-4689-8a62-07c267729a13.png?token=uW741tQQ8lAlyFd5k-9pjp6POu_FINfRsrc9J-SisWA&height=591&width=1200&expires=33275654452',
 					width: 1200,
-					height: 630,
-					alt: 'Dew Flow AI OG Image',
+					height: 591,
+					alt: 'Dew Flow AI',
 				},
 			],
 		},
-			twitter: {
-				card: 'summary_large_image',
-				title: 'Dew Flow AI',
-				description: 'AI Automation & Analytics',
-				images: [`/DewFlow OG Image.png`],
-			},
+		twitter: {
+			card: 'summary_large_image',
+			domain: 'dewflow.xyz',
+			url: 'https://www.dewflow.xyz/',
+			title: 'Dew Flow AI',
+			description: 'AI & Analytical solutions for South African businesses. Automate tasks, gain insights, and scale smarter. Book a free call today.',
+			images: [
+				'https://opengraph.b-cdn.net/production/images/3a3dd217-d8e8-4689-8a62-07c267729a13.png?token=uW741tQQ8lAlyFd5k-9pjp6POu_FINfRsrc9J-SisWA&height=591&width=1200&expires=33275654452'
+			],
+		},
 		robots: {
 			index: true,
 			follow: true,
