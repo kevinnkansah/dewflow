@@ -65,7 +65,17 @@ export const MinimalCTA: React.FC<MinimalCTAProps> = ({
         }}
       />
       <Column gap="24" fillWidth position="relative">
-        <Heading align="center" as="h2" variant="display-default-l">
+        <Heading 
+          align="center" 
+          as="h2" 
+          variant="display-strong-l"
+          style={{
+            fontSize: 'clamp(2.5rem, 5vw, 3.5rem)',
+            lineHeight: '1.1',
+            fontWeight: '700',
+            letterSpacing: '-0.02em'
+          }}
+        >
           {title}
         </Heading>
         <Text align="center" variant="body-default-l">

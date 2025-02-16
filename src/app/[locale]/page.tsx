@@ -52,32 +52,38 @@ export default function Home(
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between">
-      <Hero />
+      <Flex className="w-full">
+        <Hero />
+      </Flex>
+
       {/* Show VelocityScroll only on desktop (lg and up) */}
-      <div className="hidden lg:block w-full max-w-5xl mx-auto py-8">
+      <div className="hidden lg:block w-full max-w-5xl mx-auto py-24">
         <div className="max-w-5xl mx-auto px-4">
           <VelocityScroll 
-            text="AI Data Analytics Web Development Building Automation"
+            text="AI Analytics Development Automation"
             className={cn(
-              "text-3xl lg:text-5xl xl:text-6xl",
-              "text-center whitespace-nowrap text-white",
-              "overflow-x-hidden",
-              "px-2 lg:px-4",
-              "motion-reduce:animate-none"
+              "text-4xl lg:text-5xl xl:text-6xl font-bold",
+              "text-center whitespace-nowrap",
+              "text-white/80",
+              "motion-reduce:animate-none",
+              "transition-all duration-1000 ease-out"
             )}
           />
         </div>
       </div>
-      <Feature />
-      <Flex
-      padding='32'
-      >
-      <TiltedScrollSection />
+      <Flex className="w-full py-48">
+        <Feature />
       </Flex>
 
-      <Logos />
+      <Flex className="w-full py-48">
+        <TiltedScrollSection />
+      </Flex>
+
+      <Flex className="w-full py-48">
+        <Logos />
+      </Flex>
       
-      <div className="w-full">
+      <div className="w-full py-32">
         <ResponsiveCTA
           title="Get Started"
           buttonText="Book a Free Call"

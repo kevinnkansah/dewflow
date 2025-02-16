@@ -21,11 +21,10 @@ export function Hero() {
   return (
     <Flex 
       direction="column" 
-  
-      paddingY="64"
-      gap="32"
+      paddingY="32"
+      gap="16"
       fillWidth
-      className="relative overflow-hidden"
+      className="relative overflow-hidden min-h-[85vh] justify-center"
     >
       {/* Background gradient */}
       <Flex 
@@ -76,12 +75,27 @@ export function Hero() {
           >
             {useMediaQuery('(min-width: 640px)') ? (
               // Desktop layout
-              <Heading wrap="balance" variant="display-default-l" align="center" marginBottom="16">
-              We Speak Fluent Analytics.
-            </Heading>
+              <Heading 
+                wrap="balance" 
+                variant="display-strong-l" 
+                align="center" 
+                marginBottom="16"
+                className="text-5xl lg:text-6xl font-bold tracking-tight"
+                style={{
+                  fontSize: '4.5rem'
+                }}
+              >
+                We Speak Fluent Analytics.
+              </Heading>
             ) : (
               // Mobile layout
-              <Heading wrap="balance" variant="display-default-l" align="center" marginBottom="16" className="flex flex-col items-center justify-center gap-2">
+              <Heading 
+                wrap="balance" 
+                variant="display-strong-l" 
+                align="center" 
+                marginBottom="16"
+                className="flex flex-col items-center justify-center gap-2 text-5xl lg:text-6xl font-bold tracking-tight"
+              >
                 <span>We Speak Fluent</span>
                 <RotatingText
                   texts={['Analytics.', 'Design.', 'Automation.']}
@@ -98,11 +112,12 @@ export function Hero() {
               </Heading>
             )}
             <Text 
-              variant="body-default-m"
+              variant="body-default-l"
               onBackground="neutral-medium"
               align="center"
+              className="max-w-2xl mx-auto text-xl leading-relaxed"
             >
-              Overwhelmed by data & devlopment? Let DewFlow simplify.
+              Overwhelmed by data & development? Let DewFlow simplify your business with AI-powered solutions.
             </Text>
           </Flex>
 
@@ -119,10 +134,11 @@ export function Hero() {
               variant="primary" 
               size="l"
               prefixIcon="phone"
+              className="px-8 py-6 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
             >
               <Text
               variant='body-strong-l'>
-                Book a Free Call 
+                Book a Free Strategy Call 
               </Text>
               
             </Button>

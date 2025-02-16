@@ -78,8 +78,18 @@ const CTA: React.FC<CTAProps> = ({
       {/* Content Container with responsive horizontal padding */}
       <div className="relative z-40 flex items-center justify-center h-screen text-center">
         <div className="w-full max-w-4xl mx-auto px-4 md:px-8">
-          <Heading align="center" as="h2" variant="display-default-l">
-             {title}
+          <Heading 
+            align="center" 
+            as="h2" 
+            variant="display-strong-l"
+            style={{
+              fontSize: 'clamp(3rem, 6vw, 4.5rem)',
+              lineHeight: '1.1',
+              fontWeight: '700',
+              letterSpacing: '-0.02em'
+            }}
+          >
+            {title}
           </Heading>
           <Flex
             justifyContent="center"

@@ -25,7 +25,7 @@ export default function CertificationLogos() {
         alignItems="center"
         justifyContent="center"
         paddingBottom='32'
-        style={{ position: "relative", overflow: "hidden", width: "100%", padding: "5rem 1rem" }}
+        style={{ position: "relative", overflow: "hidden", width: "100%", padding: "8rem 2rem" }}
       ><Background borderTop="brand-alpha-strong"
       mask={{
         x: 50,
@@ -43,10 +43,17 @@ export default function CertificationLogos() {
           style={{ 
             textAlign: "center", 
             padding: "0 2rem",
-            marginBottom: "2rem"
+            marginBottom: "2rem",
+            position: "relative",
+            zIndex: 10
           }}
         >
-          <Heading variant="display-default-l" align="center" paddingBottom='24' >
+          <Heading 
+            variant="display-strong-m" 
+            align="center" 
+            paddingBottom='24'
+            className="text-5xl lg:text-6xl font-bold tracking-tight"
+          >
             Industry Certifications
           </Heading>
           <Text variant="body-default-l" align="center" onBackground="neutral-medium">
@@ -57,12 +64,42 @@ export default function CertificationLogos() {
           direction="row"
           alignItems="center"
           justifyContent="center"
-          gap='32'
+          gap='64'
         >
           
-          <img src="/logos/google.png" alt="Google Logo" style={{ height: "120px" }} />
-          <img src="/logos/ibm.png" alt="IBM Logo" style={{ height: "60px" }} />
-          <img src="/logos/matlab.png" alt="MATLAB Logo" style={{ height: "60px" }} />
+          <img 
+            src="/logos/google.png" 
+            alt="Google Logo" 
+            style={{ 
+              height: "100px",
+              filter: "brightness(0) invert(1)",
+              opacity: 0.9,
+              transition: "opacity 0.3s ease"
+            }} 
+            className="hover:opacity-100"
+          />
+          <img 
+            src="/logos/ibm.png" 
+            alt="IBM Logo" 
+            style={{ 
+              height: "45px",
+              filter: "brightness(0) invert(1)",
+              opacity: 0.9,
+              transition: "opacity 0.3s ease"
+            }}
+            className="hover:opacity-100"
+          />
+          <img 
+            src="/logos/matlab.png" 
+            alt="MATLAB Logo" 
+            style={{ 
+              height: "45px",
+              filter: "brightness(0) invert(1)",
+              opacity: 0.9,
+              transition: "opacity 0.3s ease"
+            }}
+            className="hover:opacity-100"
+          />
         </Flex>
       </Flex>
     ) : (
@@ -95,7 +132,12 @@ export default function CertificationLogos() {
               padding: "0 2rem"
             }}
           >
-            <Heading variant="display-default-m" align="center" paddingBottom='16'>
+            <Heading 
+              variant="display-strong-l" 
+              align="center" 
+              paddingBottom='16'
+              className="text-4xl lg:text-5xl font-bold tracking-tight"
+            >
               Industry Certifications
             </Heading>
             <Text 

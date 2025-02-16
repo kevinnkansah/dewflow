@@ -23,24 +23,32 @@ const features = [
 
 export function TiltedScrollSection() {
   return (
-    <div className="w-full py-20 lg:py-40">
-      <div className="container mx-auto max-w-5xl">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+    <div className="w-full">
+      <div className="container mx-auto max-w-5xl px-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-24 items-center">
           <div className="order-2 md:order-1">
             <TiltedScroll 
               items={features}
             />
           </div>
-          <div className="order-1 md:order-2 flex flex-col gap-4 text-left">
-            <Heading as="h2" variant="display-default-m">
-                Everything you need
+          <div className="order-1 md:order-2 flex flex-col gap-8 text-left relative z-10 p-8">
+            <Heading 
+              as="h2" 
+              variant="display-strong-m"
+              style={{
+                lineHeight: '1.1',
+                fontWeight: '700',
+                letterSpacing: '-0.02em'
+              }}
+            >
+              Transformative AI Integration & Support
             </Heading>
             <Text 
               variant="body-default-l"
               onBackground="neutral-medium"
               className="max-w-xl"
             >
-              Experience seamless integration of AI, data insights, cutting-edge web solutions, and interactive demos—all in one place. Our agency delivers transformative results through intuitive design, powerful automation, and personalized support, ensuring you stay ahead in an ever-evolving digital landscape.
+              Experience seamless integration of AI, data insights, cutting-edge web solutions, and interactive demos—all in one place. 
             </Text>
           </div>
         </div>

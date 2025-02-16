@@ -35,45 +35,47 @@ const features = [
 
 function Feature() {
   return (
-    <div className="w-full py-32 lg:py-48">
-      <div className="container mx-auto max-w-5xl">
-        <div className="flex flex-col gap-16">
+    <div className="w-full">
+      <div className="container mx-auto max-w-6xl px-6">
+        <div className="flex flex-col gap-24">
           <div className="flex gap-6 flex-col items-center text-center">
             <div className="flex gap-4 flex-col items-center max-w-2xl mx-auto">
               <Heading 
-                variant="display-default-m"
+                variant="display-strong-m"
                 as="h2"
                 align="center"
+                className="text-5xl lg:text-6xl font-bold tracking-tight"
               >
-                Our Services
+                Comprehensive Digital Solutions
               </Heading>
               <Text 
-                variant="body-default-m"
+                variant="body-default-l"
                 onBackground="neutral-medium"
                 align="center"
-                className="max-w-xl lg:max-w-lg"
+                className="max-w-xl lg:max-w-2xl"
+                style={{ lineHeight: 1.6 }}
               >
-                Our agency provides all the solutions you need to manage and grow your business efficiently.
-                
+                Everything you need to transform your business with AI and analytics, all in one place.
               </Text>
             </div>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
             {features.map((feature, index) => (
               <Flex
                 key={index}
                 direction="column"
-                padding="32"
+                padding="48"
                 radius="m"
-                border="neutral-medium"
-                background={`${feature.color}-strong`}
-                className={`${feature.className} relative group`}
+                border={index === 0 ? 'accent-medium' : 'brand-medium'}
+                background={index === 0 ? 'accent-strong' : `${feature.color}-strong`}
+                className={`${feature.className} relative group overflow-hidden`}
               >
                   <Background
                     mask={{
                       x: 60,
                       y: 0,
                       radius: 100,
+                      overflow: 'hidden'
                     }}
                     position="absolute"
                     gradient={{
@@ -90,7 +92,8 @@ function Feature() {
                         display: true,
                         size: "4",
                         color: "accent-solid-strong",
-                        opacity: 100
+                        opacity: 100,
+                        overflow: "hidden"
                     }}
                   />
                   <Background
@@ -99,6 +102,7 @@ function Feature() {
                       x: 75,
                       y: 0,
                       radius: 100,
+                      overflow: 'hidden'
                     }}
                     position="absolute"
                     gradient={{
@@ -118,6 +122,7 @@ function Feature() {
                       x: 0,
                       y: 100,
                       radius: 100,
+                      overflow: 'hidden'
                     }}
                     position="absolute"
                     gradient={{
@@ -132,8 +137,8 @@ function Feature() {
                       colorEnd: "static-transparent",
                     }}
                   />
-                <div className="flex flex-col gap-6 h-full relative z-0">
-                  <div className="flex flex-col gap-4">
+                <div className="flex flex-col gap-8 h-full relative z-10 justify-center">
+                  <div className="flex flex-col gap-6 relative">
                     <div className={`p-3 rounded-lg bg-${feature.color}-strong/10 w-fit`}>
                       <Flex
                         direction="row"
@@ -166,13 +171,14 @@ function Feature() {
                       variant="secondary"
                       size="s"
                       href="/contact"
-                      className="opacity-0 group-hover:opacity-100 transition-opacity"
+                      className="absolute top-0 right-0 opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-2 group-hover:translate-y-0"
                     >
-                      <Flex gap="8">
+                      <Flex gap="8" className="items-center">
                         Learn more
                         <Arrow
                           trigger={`#feature-${index}`}
                           color="onBackground"
+                          className="group-hover:translate-x-1 transition-transform duration-300"
                         />
                       </Flex>
                     </Button>
