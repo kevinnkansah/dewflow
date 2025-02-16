@@ -73,7 +73,7 @@ export function Hero() {
             gap="12"
             fillWidth
           >
-            {useMediaQuery('(min-width: 640px)') ? (
+            {useMediaQuery('(min-width: 967px)') ? (
               // Desktop layout
               <Heading 
                 wrap="balance" 
