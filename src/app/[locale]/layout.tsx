@@ -36,7 +36,7 @@ export async function generateMetadata(
 			description: 'AI & Analytical solutions for South African businesses. Automate tasks, gain insights, and scale smarter. Book a free call today.',
 			images: [
 				{
-					url: 'https://opengraph.b-cdn.net/production/images/3a3dd217-d8e8-4689-8a62-07c267729a13.png?token=uW741tQQ8lAlyFd5k-9pjp6POu_FINfRsrc9J-SisWA&height=591&width=1200&expires=33275654452',
+					url: '/opengraph-image.jpg',
 					width: 1200,
 					height: 591,
 					alt: 'Dew Flow AI',
@@ -50,7 +50,7 @@ export async function generateMetadata(
 			title: 'Dew Flow AI',
 			description: 'AI & Analytical solutions for South African businesses. Automate tasks, gain insights, and scale smarter. Book a free call today.',
 			images: [
-				'https://opengraph.b-cdn.net/production/images/3a3dd217-d8e8-4689-8a62-07c267729a13.png?token=uW741tQQ8lAlyFd5k-9pjp6POu_FINfRsrc9J-SisWA&height=591&width=1200&expires=33275654452'
+				'/opengraph-image.jpg',
 			],
 		},
 		robots: {
