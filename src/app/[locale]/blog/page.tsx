@@ -70,7 +70,7 @@ export default function Blog(
 			/>
             <Heading
                 marginBottom="l"
-                variant="display-default-s">
+                variant="display-strong-s">
                 Design & Tech: Insights & Innovation
             </Heading>
 			<Flex

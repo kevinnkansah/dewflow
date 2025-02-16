@@ -22,7 +22,7 @@ export default function ContactPage() {
 
     return (
         <Flex direction="column" gap="12" alignItems="center" paddingY="24" maxWidth="l">
-            <Heading variant="display-medium-m" align="center" paddingY="8">
+            <Heading variant="display-strong-m" align="center" paddingY="8">
                 Book a Call
             </Heading>
             <Text variant="body-default-l" align="center" paddingY="4">
