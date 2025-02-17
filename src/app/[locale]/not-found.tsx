@@ -1,4 +1,4 @@
-import { Flex, Heading, Text } from "@/once-ui/components";
+import { Flex, Heading, SmartLink, Text } from "@/once-ui/components";
 
 export default function NotFound() {
     return (
@@ -19,6 +19,10 @@ export default function NotFound() {
                 onBackground="neutral-weak">
                 The page you are looking for does not exist.
             </Text>
+            <SmartLink
+                href="/">
+                Go back to home
+            </SmartLink>
         </Flex>
     )
 }
