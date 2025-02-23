@@ -37,7 +37,7 @@ export async function generateMetadata(
 			logo: '/DewFlow Logo Web.png',
 			images: [
 				{
-						url: 'https://www.dewflow.xyz/dewflow-opengraph-image.jpg',
+					url: 'https://www.dewflow.xyz/dewflow-opengraph-image.jpg',
 					width: 1200,
 					height: 630,
 					alt: 'Dew Flow AI - Your AI & Analytical Solutions Partner',
