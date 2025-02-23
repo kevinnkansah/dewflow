@@ -13,7 +13,7 @@ export async function generateMetadata(
 
 	const title = "DewFlow AI | Blog";
 	const description = blog.description;
-	const ogImage = `https://${baseURL}/og?title=${encodeURIComponent(title)}`;
+	const ogImage = `https://${baseURL}/dewflow-opengraph-image.jpg`;
 
 	return {
 		title,

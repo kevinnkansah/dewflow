@@ -12,7 +12,7 @@ export async function generateMetadata(
     const { about, social } = renderContent(t);
 	const title = about.title;
 	const description = about.description;
-	const ogImage = `https://${baseURL}/og?title=${encodeURIComponent(title)}`;
+	const ogImage = `https://${baseURL}/dewflow-opengraph-image.jpg`;
 
 	return {
 		title,
