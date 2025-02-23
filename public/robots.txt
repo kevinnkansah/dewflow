@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://dewflow.xyz
+
+# Sitemaps
+Sitemap: https://dewflow.xyz/sitemap.xml

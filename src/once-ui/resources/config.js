@@ -26,21 +26,21 @@ const og = {
   title: "Once UI for Next.js",
   description: "We let designers code and developers design.",
   type: "website",
-  image: "/images/cover.jpg"
+  image: "/opengraph-image.jpg"
 };
 
 // default schema data
 const schema = {
   logo: "",
   type: "Organization",
-  name: "One UI",
+  name: "Once UI",
   description: "Once UI is an open-source design system and component library for Next.js.",
   email: "",
 };
 
 // social links
 const social = {
-  linkedin: "https://www.linkedin.com/company/shulkerflow",
+  linkedin: "https://www.linkedin.com/company/dewflow",
 };
 
 export { baseURL, style, meta, og, schema, social };
