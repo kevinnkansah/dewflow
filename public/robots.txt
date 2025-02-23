@@ -1,9 +1,12 @@
 # *
 User-agent: *
 Allow: /
+Disallow: /404
+Disallow: /500
 
 # Host
 Host: https://dewflow.xyz
 
 # Sitemaps
 Sitemap: https://dewflow.xyz/sitemap.xml
+Sitemap: https://dewflow.xyz/server-sitemap.xml

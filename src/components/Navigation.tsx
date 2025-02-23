@@ -6,6 +6,7 @@ import { useRouter } from 'next/navigation'
 import { UserNav } from './UserNav'
 import { Flex } from '@/once-ui/components'
 import { usePathname } from 'next/navigation'
+import { routes } from '@/app/resources'
 
 export function Navigation() {
   const { isSignedIn } = useAuth()
@@ -19,6 +20,10 @@ export function Navigation() {
 
   if (isSignedIn) {
     return <UserNav />
+  }
+
+  if (!routes['/sign-in'] && !routes['/sign-up']) {
+    return null
   }
 
   return (

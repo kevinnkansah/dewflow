@@ -37,7 +37,7 @@ export async function generateMetadata(
 			description: 'AI & Analytical solutions for South African businesses. Automate tasks, gain insights, and scale smarter. Book a free call today.',
 					images: [
 						{
-							url: 'https://www.dewflow.xyz/opengraph-image.jpg',
+							url: 'https://www.dewflow.xyz/dewflow-opengraph-image.jpg',
 							width: 1200,
 							height: 630,
 							alt: 'Dew Flow AI - Your AI & Analytical Solutions Partner',
